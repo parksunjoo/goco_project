@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>판판_선택</title>
+<title>판판_글보기</title>
 <link rel="stylesheet" href="font/font.css">
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/nav.css">
@@ -136,7 +136,7 @@
           </ul>
         </div>
       </div>
-      <div class="comment">
+      <div class="comment_1">
         <div class="comment-content">
           <div class="content">
             <h3>노세이프존은 구시대적 발상입니다.</h3>
@@ -255,17 +255,17 @@
 <script src="js/common.js"></script>
 <script>
   $(function(){
-    $('.comment > ul > li').click(function(){
+    $('.comment_1 > ul > li').click(function(){
       $('.comment-content').animate({
         top: 0
-      });
+      },400,'easeOutQuint');
     });
     $('.content > .close').click(function(){
       $('.comment-content').animate({
         top: -630
-      });
+      },400,'easeOutQuint');
     });
-    $('.comment > ul > li > a').click(function(e){
+    $('.comment_1 > ul > li > a').click(function(e){
       e.preventDefault();
     })
   })
