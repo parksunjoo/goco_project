@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>판판_선택</title>
+<title>판판_글보기</title>
 <link rel="stylesheet" href="font/font.css">
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/nav.css">
@@ -17,15 +17,14 @@
 <nav>
   <div class="cwrp">
     <ul>
-      <li><a href="#" class="txt_dl">로고</a></li>
+      <li><a href="index.html" class="txt_dl">로고</a></li>
       <li><a href="#">서비스소개</a></li>
-      <li><a href="#">핫이슈재판</a></li>
+      <li><a href="hot.html">핫이슈재판</a></li>
       <li><a href="#" class="select">카테고리</a></li>
       <li><a href="#">판판광장</a></li>
       <li class="nav_id"><a href="#" >로그인</a></li>
       <li class="nav_join"><a href="#">회원가입</a></li>
-    </ul>
-    <form action="get">
+    </ul>    <form action="get">
       <div>
         <input type="text" placeholder="검색어를 입력해주세요">
         <input type="submit" value=" ">
@@ -136,7 +135,7 @@
           </ul>
         </div>
       </div>
-      <div class="comment">
+      <div class="comment_1">
         <div class="comment-content">
           <div class="content">
             <h3>노세이프존은 구시대적 발상입니다.</h3>
@@ -228,7 +227,7 @@
           <p>의견 선택</p>
           <p class="notice">한번 선택한 의견은 24시간 내에 변경이 불가능하니 주의해주세요.</p>
           <ul>
-            <li><a href="#">원고</a></li>
+            <li><a href="select_2.html">원고</a></li>
             <li><a href="#">배심원</a></li>
             <li><a href="#">피고</a></li>
           </ul>
@@ -255,17 +254,17 @@
 <script src="js/common.js"></script>
 <script>
   $(function(){
-    $('.comment > ul > li').click(function(){
+    $('.comment_1 > ul > li').click(function(){
       $('.comment-content').animate({
         top: 0
-      });
+      },400,'easeOutQuint');
     });
     $('.content > .close').click(function(){
       $('.comment-content').animate({
         top: -630
-      });
+      },400,'easeOutQuint');
     });
-    $('.comment > ul > li > a').click(function(e){
+    $('.comment_1 > ul > li > a').click(function(e){
       e.preventDefault();
     })
   })
