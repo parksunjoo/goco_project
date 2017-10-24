@@ -75,8 +75,6 @@ section .leftside{
 }
 
 .rightside{
-  position: relative;
-  overflow: hidden;
   width: 550px;
   border: 1px solid #cdcdcd;
 }
@@ -88,7 +86,6 @@ section .leftside{
   float: left;
   width: 33.3%;
   background-color: #ddd;
-  /*box-sizing: border-box;*/
   font-weight: bold;
 }
 .rightside .opinion li a{
@@ -160,53 +157,11 @@ section .leftside{
   clear: both;
 }
 
-.option-infomation{}
-.comment{position: relative;overflow: hidden;}
 .comment ul{
-  overflow: hidden;
   height: 630px;
   overflow-y: scroll;
 }
-.comment-content{
-  z-index: 10;
-  top: -630px;
-  position: absolute;
-  width: 100%; height: 100%;
-  background: #fff;
-}
-.content{
-  margin: 0 auto;
-  width: 466px;
-}
-.content h3{
-  display: inline-block;
-  font-size: 16px;
-  margin: 40px 0;
-}
-.content > .close{
-  cursor: pointer;
-  width: 18px; height: 18px;
-  background: url(../img/icons.png) no-repeat;
-  background-position: -90px 0;
-  display: inline-block;
-  position: absolute;
-  top: 43px; right: 62px;
-}
-.content > .userimg{
-  width: 18px; height: 18px;
-  display: inline-block;
-  background: url(../img/user_icons.png) no-repeat;
-  background-size: auto 100%;
-  display: block;
-}
-.content > .userimg::after{
-  content: 'panda022';
-  margin-left: 25px;
-}
-.content p{
-  margin-top: 26px;font-size: 13px;
-  line-height: 20px;
-}
+
 .comment ul::-webkit-scrollbar{
   display: none;
 }
@@ -215,9 +170,6 @@ section .leftside{
   height: 110px;
   border-bottom: 1px solid #b3b3b3;
   position: relative;
-}
-.comment ul li:last-of-type{
-  border-bottom: none;
 }
 .comment ul li a{
   display: inline-block;
@@ -294,4 +246,150 @@ section .leftside{
   color: #fff; font-weight: bold;
   display: inline-block;
   width: 100%; height: 100%;
+}
+
+.leftside ul{
+  height: 905px;
+  overflow-y: scroll;
+}
+.leftside li.listpost_item{
+  height: 200px;
+  border-bottom: 1px solid #cdcdcd;
+}
+.leftside li.listpost_item .user_info{
+  position: relative;
+  color: #525151;
+  height: 36px; line-height: 20px;
+  margin-top: 20px;
+}
+.leftside li.listpost_item .user_info .user_icon{
+  width: 36px; height: 36px;
+  display: inline-block;
+  float: left;
+  background: url(../img/user_icons.png) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-right: 10px;
+}
+.leftside li.listpost_item .user_id{
+}
+.leftside li.listpost_item .content_info{
+  font-size: 10px;
+}
+.leftside li.listpost_item .date{
+  position: absolute; bottom:0; right: 0;
+}
+.leftside li.listpost_item .date::after{
+  position: relative; top: 3px;
+  content: '';
+  display: inline-block;
+  width: 18px; height: 18px;
+  background: url(../img/icons.png) no-repeat;
+  background-position: -54px 0;
+  margin-left: 15px;
+}
+.leftside .best_post{
+  color: #525151;
+  line-height: 2em;
+  margin-top: 28px;
+}
+.leftside .best_post .post_h{
+  font-size: 16px; font-weight: bold;
+}
+.leftside .best_post .post_h{
+  font-size: 16px; font-weight: bold;
+}
+/*.leftside .best_post .post_icon{
+  margin-top: 10px;
+}
+.leftside .best_post .post_icon span{
+  margin-right: 5px;
+}
+.leftside .best_post .post_icon span::before{
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+  content: '';
+  width: 18px; height: 18px;
+  display: inline-block;
+  background: url(../img/icons.png) no-repeat;
+}
+.leftside .best_post .post_icon .post_up::before{background-position: -36px 0;}
+.leftside .best_post .post_icon .post_re::before{background-position: -72px 0;}*/
+
+.rightside .choice .user_id{
+  color: #525151; font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 1px solid #cdcdcd;
+}
+.rightside .choice .text_area{
+  height: 127px;
+  position: relative;
+  padding: 20px;
+}
+.rightside .choice .text_area textarea{
+  border: none;
+}
+.rightside .choice .text_area textarea::-webkit-input-placeholder{
+  color: #c1bfbf;
+}
+.rightside .choice .text_area input[type="submit"]{
+  background-color: #1990ff; color: #fff;
+  position: absolute; right: 0;
+  border-radius: 10px;
+  border: 0;
+  width: 100px; height: 90px;
+  cursor: pointer;
+}
+
+/*.comment .min*/
+
+.comment ul li:last-of-type{
+  border-bottom: none;
+}
+.comment-content{
+  z-index: 10;
+  top: -630px;
+  position: absolute;
+  width: 100%; height: 100%;
+  background: #fff;
+}
+.content{
+  margin: 0 auto;
+  width: 466px;
+}
+.content h3{
+  display: inline-block;
+  font-size: 16px;
+  margin: 40px 0;
+}
+.content > .close{
+  cursor: pointer;
+  width: 18px; height: 18px;
+  background: url(../img/icons.png) no-repeat;
+  background-position: -90px 0;
+  display: inline-block;
+  position: absolute;
+  top: 43px; right: 62px;
+}
+.content > .userimg{
+  width: 18px; height: 18px;
+  display: inline-block;
+  background: url(../img/user_icons.png) no-repeat;
+  background-size: auto 100%;
+  display: block;
+}
+.content > .userimg::after{
+  content: 'panda022';
+  margin-left: 25px;
+}
+.content p{
+  margin-top: 26px;font-size: 13px;
+  line-height: 20px;
+}
+.rightside{
+  position: relative;
+  overflow: hidden;
+  width: 550px;
+  border: 1px solid #cdcdcd;
 }
