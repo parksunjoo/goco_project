@@ -2,12 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>판판_선택</title>
+<title>판판_채팅</title>
 <link rel="stylesheet" href="font/font.css">
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/nav.css">
 <link rel="stylesheet" href="css/select1.css">
-<link rel="stylesheet" href="css/select2.css">
 <link rel="shortcut icon" type="image/x-icon" href="img/logo_icon.png"/>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/easetype.js"></script>
@@ -217,9 +216,9 @@
 
     <article class="rightside">
       <ul class="opinion">
-        <li class="select"><a href="#">전체 대표의견</a></li>
-        <li><a href="#">빨간팀 대표의견</a></li>
-        <li><a href="#">파란팀 대표의견</a></li>
+        <li class="select"><a href="#">실시간 채팅방</a></li>
+        <li><a href="#">게시글 작성</a></li>
+        <li><a href="#">원고 대표의견</a></li>
       </ul>
       <div class="infomation">
         <ul>
@@ -263,10 +262,9 @@
           </li>
         </ul>
       </div>
-      <div class="comment">
+      <div class="comment_2">
         <div class="mincwrp">
           <ul>
-            dasdasds
           </ul>
         </div>
       </div>
@@ -277,8 +275,8 @@
             </div>
           </div>
           <div class="text_area mincwrp">
-            <textarea name="" id="" cols="50" rows="5" placeholder="욕설과 타인 비방은 서비스 이용에 제재를 받을 수 있습니다."></textarea>
-            <input type="submit" value="보내기">
+            <textarea name="" id="usersay" cols="50" rows="5" placeholder="욕설과 타인 비방은 서비스 이용에 제재를 받을 수 있습니다."></textarea>
+            <input id="chat_submit" type="submit" value="보내기">
           </div>
       </div>
     </article>
@@ -300,5 +298,50 @@
 
 <!-- body end-->
 <script src="js/common.js"></script>
+<script>
+(function($){
+$(document).ready(function(){
+// !! code start !!
+var botTexts = [
+  '누구나,모두 함께 토론하는 판판!',
+  '다른 사람의 텍스트는 이렇게 보이게 됩니다.',
+  '지금부터 토론을 시작하지',
+  'ㅋㅋㅋㅋㅋㅋㅋㅋ'];
+$('#chat_submit').on('click',function(){
+  var nowval = $('#usersay').val();
+  if(!!nowval){
+    $('#usersay').remove();
+    var textareaNode = $("<textarea name='' id='usersay' cols='50' rows='5' placeholder='욕설과 타인 비방은 서비스 이용에 제재를 받을 수 있습니다'.></textarea>");
+    $('.text_area').prepend(textareaNode);
+    var mychatNode = $("<li class='my_chat chat'><div class='innerchat'>"+ nowval+"</div></li>");
+    $(".comment_2 ul").prepend(mychatNode);
+  }else{
+    alert('텍스트를 입력해주세요.');
+  }
+  console.log(nowval);
+})
+var testbot = setInterval(function(){
+  var ranNum = Math.floor(Math.random() * botTexts.length);
+  var testbotNode = $("<li class='other_chat chat'><span class='other_icon'></span><div class='innerchat'><p class='other_id'>panda022</p>"+ botTexts[ranNum]+"</div></li>");
+  $(".comment_2 ul").prepend(testbotNode);
+},3000);
+// $('#chat_submit').keydown(sfunction(key){
+//   if(key.keyCode == 13){
+//     $('#chat_submit').trigger('click');
+//   }
+// });
+$('.rightside .opinion li').on('click',function(){
+  console.log();
+  $('.opinion').find('li').removeClass('select');
+  $('.opinion').find('li').eq($(this).index()).addClass('select');
+})
+//document
+$('.rightside a').on('click',function(evt){
+  evt.preventDefault();
+})
+});//ready
+})(jQuery);
+
+</script>
 </body>
 </html>

@@ -158,11 +158,11 @@ section .leftside{
 .rightside .infomation > ul > li:last-child dl dd:nth-child(3){
   clear: both;
 }
-.comment{position: relative;overflow: hidden;}
-.comment ul{
+.comment_1,.comment_2{position: relative;overflow: hidden;}
+.comment_1,.comment_2 ul{
   overflow: hidden;
   height: 630px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .comment-content{
   z-index: 10;
@@ -204,54 +204,55 @@ section .leftside{
   margin-top: 26px;font-size: 13px;
   line-height: 20px;
 }
-.comment ul::-webkit-scrollbar{
+.comment_1::-webkit-scrollbar,
+.comment_2::-webkit-scrollbar{
   display: none;
 }
 
-.comment ul li {
+.comment_1 ul li {
   height: 110px;
   border-bottom: 1px solid #b3b3b3;
   position: relative;
 }
-.comment ul li:last-of-type{
+.comment_1 ul li:last-of-type{
   border-bottom: none;
 }
-.comment ul li a{
+.comment_1 ul li a{
   display: inline-block;
   width: 100%; height: 100%;
 }
-.comment ul li a::after{
+.comment_1 ul li a::after{
   content: '';
   width: 18px; height: 18px;
   position: absolute; right: 40px; top:50px;
   background: url(../img/icons.png) no-repeat;
   background-position: -54px 0;
 }
-.comment ul li .userimg{
+.comment_1 ul li .userimg{
   position: relative; top: 30px; left: 33px;
   display: inline-block;
   width: 50px; height: 50px;
   background: url(../img/user_icons.png) no-repeat;
   background-size: auto 100%;
 }
-.comment ul li .text{
+.comment_1 ul li .text{
   display: inline-block;
   top: 40px; left:110px;
   position: absolute;
 }
-.comment ul li .text .username{
+.comment_1 ul li .text .username{
   color: #525151;
 }
-.comment ul li .text .usersay{
+.comment_1 ul li .text .usersay{
   font-size: 16px; font-weight: bold;
   color: #2b2b2b;
 }
-.comment ul li .text .usersay .up{
+.comment_1 ul li .text .usersay .up{
   font-size: 13px;
   color: #525151;
   margin-left: 10px;
 }
-.comment ul li .text .usersay .up::before{
+.comment_1 ul li .text .usersay .up::before{
   background: url(../img/icons.png)no-repeat;
   background-position: -36px 0;
   content: '';
@@ -344,6 +345,26 @@ section .leftside{
 .leftside .best_post .post_h{
   font-size: 16px; font-weight: bold;
 }
+
+
+.post_icon{
+  margin-top: 10px;
+}
+.post_icon span{
+  margin-right: 5px;
+}
+.post_icon span::before{
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+  content: '';
+  width: 18px; height: 18px;
+  display: inline-block;
+  background: url(../img/icons.png) no-repeat;
+}
+.post_icon .post_up::before{background-position: -36px 0;}
+.post_icon .post_re::before{background-position: -72px 0;}
+
 /*.leftside .best_post .post_icon{
   margin-top: 10px;
 }
@@ -374,7 +395,13 @@ section .leftside{
 }
 .rightside .choice .text_area textarea{
   border: none;
+  resize: none;
+  outline:none;
 }
+.rightside .choice .text_area textarea:focus{
+  box-shadow:0 0 1px #1990ff;
+}
+
 .rightside .choice .text_area textarea::-webkit-input-placeholder{
   color: #c1bfbf;
 }
@@ -383,8 +410,54 @@ section .leftside{
   position: absolute; right: 0;
   border-radius: 10px;
   border: 0;
-  width: 100px; height: 90px;
+  width: 100px; height: 85px;
   cursor: pointer;
 }
 
-/*.comment .min*/
+.comment_2{
+  color: #2b2b2b;
+}
+.comment_2 ul{
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+}
+.comment_2 ul::-webkit-scrollbar{
+  display: none;
+}
+.comment_2 .mincwrp{
+  width: 480px ; margin: 0 auto;
+}
+.comment_2 .chat{
+  width: 100%;
+  margin-bottom: 25px;
+}
+.comment_2 .chat:first-child{
+  margin-bottom: 50px;
+}
+.comment_2 .other_chat .innerchat .other_id{
+  margin-bottom: 10px;
+}
+.comment_2 .other_chat .other_icon{
+  width: 36px; height: 36px;
+  display: inline-block;
+  background: url(../img/user_icons.png) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-right: 10px;
+}
+.comment_2 .my_chat{
+}
+.comment_2 .innerchat{
+  display: inline-block;
+  padding: 18px 23px;
+  border-radius: 3px;
+}
+
+.comment_2 .other_chat .innerchat{
+  border: 1px solid #ebebeb;
+}
+.comment_2 .my_chat .innerchat{
+  float: right;
+  background-color: #ebebeb;
+}
