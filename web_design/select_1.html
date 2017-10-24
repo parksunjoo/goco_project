@@ -217,5 +217,22 @@
 
 <!-- body end-->
 <script src="js/common.js"></script>
+<script>
+  $(function(){
+    $('.comment > ul > li').click(function(){
+      $('.comment-content').animate({
+        top: 0
+      });
+    });
+    $('.content > .close').click(function(){
+      $('.comment-content').animate({
+        top: -630
+      });
+    });
+    $('.comment > ul > li > a').click(function(e){
+      e.preventDefault();
+    })
+  })
+</script>
 </body>
 </html>
