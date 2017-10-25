@@ -1,1 +1,11 @@
-
+.ctn{
+  background-color: #d3d;
+}
+.ctn_ul{
+  border: 1px solid #3d3;
+  margin: 0 2.6%;
+}
+.ctn_ul_item{
+  height: 1000px;
+  background-color: #ddd;
+}
