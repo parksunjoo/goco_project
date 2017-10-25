@@ -1,11 +1,34 @@
 .ctn{
-  background-color: #d3d;
+  margin-top: 4%;
+  height: 100%;
+  background-color: #ddd;
 }
 .ctn_ul{
-  border: 1px solid #3d3;
+  background-color: #ddd;
   margin: 0 2.6%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .ctn_ul_item{
-  height: 1000px;
-  background-color: #ddd;
+  margin-top: 2.6%;
+  width: 48.4%; height: 30%;
+  background-color: #aaa;
+}
+.ctn_ul_item.big{
+  width: 100%;
+}
+.ctn_ul_item .newsimg {
+  height: 74%;
+  border: 1px solid #000;
+}
+.ctn_ul_item .ctn_dl dt{
+  border: 1px solid #d3d;
+  font-size: 10pt;
+}
+.ctn_ul_item .ctn_dl dd{
+  border: 1px solid #3d3;
+  font-size: 12pt; font-weight: bold;
 }

@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/index.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
 </head>
 
 <body>
@@ -31,38 +34,38 @@
   <div class="ctn">
     <ul class="ctn_ul">
       <li class="ctn_ul_item big">
-        <a href="#"><div class="newsimg"></div></a>
+      <div class="newsimg"><a href="#"></a></div>
           <dl class="ctn_dl">
-            <dd>사회&#47;문화</dd>
+            <dt>사회&#47;문화</dt>
             <dd><a href="#">어린아이들의 스마트기기 사용이 과연 이로울까</a></dd>
           </dl>
         </a>
       </li>
       <li class="ctn_ul_item">
-        <a href="#"><div class="newsimg"></div></a>
+        <div class="newsimg"><a href="#"></a></div>
           <dl class="ctn_dl">
-            <dd>사회&#47;문화</dd>
+            <dt>사회&#47;문화</dt>
             <dd><a href="#">유기견 죽여야만 하나요</a></dd>
           </dl>
       </li>
       <li class="ctn_ul_item">
-        <a href="#"><div class="newsimg"></div></a>
+        <div class="newsimg"><a href="#"></a></div>
         <dl class="ctn_dl">
-          <dd>세계</dd>
+          <dt>세계</dt>
           <dd><a href="#">북극의 눈물, 이젠 그만</a></dd>
         </dl>
       </li>
       <li class="ctn_ul_item">
-        <a href="#"><div class="newsimg"></div></a>
+        <div class="newsimg"><a href="#"></a></div>
         <dl class="ctn_dl">
-          <dd>사회&#47;문화</dd>
+          <dt>사회&#47;문화</dt>
           <dd><a href="#">어린아이들의 스마트기기 사용이 과연 이로울까</a></dd>
         </dl>
       </li>
       <li class="ctn_ul_item">
-        <a href="#"><div class="newsimg"></div></a>
+        <div class="newsimg"><a href="#"></a></div>
         <dl class="ctn_dl">
-          <dd>사회&#47;문화</dd>
+          <dt>사회&#47;문화</dt>
           <dd><a href="#">어린아이들의 스마트기기 사용이 과연 이로울까</a></dd>
         </dl>
       </li>
@@ -94,6 +97,25 @@
       </li>
     </ul>
   </div>
+<script type="text/javascript">
+(function($){
+$(document).ready(function(){
+
+// var ctnItemW = $('.ctn_ul_item').width();
+var autoHeightSet = function(item){
+  var wd = item.width();
+  var setHeight = ($(this).width() / 100) * 45;
+  $('.ctn_ul_item').height(setHeight);
+};
+autoHeightSet($('.ctn_ul_item'));
+
+// 74&
+
+
+
+});//doc
+})(jQuery);
+</script>
 </body>
 
 </html>
