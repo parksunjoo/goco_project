@@ -6,3 +6,29 @@ a{text-decoration: none;}
 body{
   letter-spacing: -1px;
 }
+
+#logo h1{
+  width: 44px; height: 22px;
+  margin: 15px auto;
+  background: url(../img/logo_text_black.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.main_nav{
+}
+.main_nav_ul{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.main_nav_item{
+  width: 12.5%;
+  text-align: center;
+}
+.main_nav_item a{
+  font-size: 13px;
+}
+.main_nav_item.select a{
+  border-bottom: 4px solid #0a9ef8;
+}
