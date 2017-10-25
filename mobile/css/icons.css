@@ -1,4 +1,4 @@
-span{height:104px; width:104px; display:block; position:relative;}
+span.icons{height:104px; width:104px; display:block; position:relative;}
 
 .demoSpan1{border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px; background:#333;}
 
