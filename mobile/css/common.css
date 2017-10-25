@@ -11,6 +11,11 @@ body{
   box-sizing: border-box;
   height: 100%;
 }
+.fixwrp{
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+}
 #logo h1{
   width: 44px; height: 22px;
   margin: 15px auto;
@@ -30,6 +35,8 @@ body{
 }
 .main_nav_item a{
   font-size: 13pt;
+  padding: 5px 0;
+  display: inline-block;
 }
 .main_nav_item.select a{
   border-bottom: 4px solid #0a9ef8;

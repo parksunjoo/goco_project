@@ -1,10 +1,8 @@
 .ctn{
-  margin-top: 4%;
+  padding-top: 90px;
   height: 100%;
-  background-color: #ddd;
 }
 .ctn_ul{
-  background-color: #ddd;
   margin: 0 2.6%;
   display: -webkit-flex;
   display: -ms-flex;
@@ -14,15 +12,25 @@
 }
 .ctn_ul_item{
   margin-top: 2.6%;
-  width: 48.4%; height: 30%;
-  background-color: #aaa;
+  width: 48.4%;
+  height: auto;
+  background-color: #ff1;
 }
 .ctn_ul_item.big{
   width: 100%;
 }
 .ctn_ul_item .newsimg {
-  height: 74%;
-  border: 1px solid #000;
+  height: 110px;
+  background-color: #3d3;
+}
+.ctn_ul_item.big .newsimg {
+  height: 160px;
+  background-color: #3d3;
+}
+.ctn_ul_item .ctn_dl{
+  padding: 12px;
+  display: block;
+  h
 }
 .ctn_ul_item .ctn_dl dt{
   border: 1px solid #d3d;
