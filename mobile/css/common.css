@@ -1,7 +1,8 @@
-span{height:104px; width:104px; display:block; position:relative;}
-
-.demoSpan1{border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px; background:#333;}
-
-.demoSpan1:before, .demoSpan1:after{content:''; height:8px; width:36px; display:block; background:#fff;  position:absolute; top:50px; left:34px;}
-
-.demoSpan1:after{height:36px; width:8px; top:36px; left:48px;}
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,button,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time,menu,select,legend{margin:0;padding:0}
+li{list-style: none;}
+a{text-decoration: none;}
+.txt_dl{
+  font-size: 0; color: transparent; text-indent: -9999px;
+  -webkit-background-size: ;
+  background-size: ;
+}
