@@ -2,7 +2,7 @@ html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset
 li{list-style: none;}
 a{text-decoration: none;}
 .txt_dl{
-  font-size: 0; color: transparent; text-indent: -9999px;
-  -webkit-background-size: ;
-  background-size: ;
+  font-size: 0; color: transparent; text-indent: -9999px;}
+body{
+  letter-spacing: -1px;
 }
