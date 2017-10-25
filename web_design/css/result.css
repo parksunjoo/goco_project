@@ -43,12 +43,12 @@ h2 b{color: #1990ff;}
 }
 /*#best4 > .cwrp ul::-webkit-scrollbar{display: none;}*/
 #best4 > .cwrp .best4_ul .best4_item{
-  height: 428px;
+
+  height: 430px;
   min-width: 306px;
   box-sizing: border-box;
   border-radius: 5px;
   position: relative;
-  /*overflow: hidden;*/
   cursor: pointer;
   perspective: 800px;
 }
@@ -62,6 +62,7 @@ h2 b{color: #1990ff;}
   transition: 0.6s;
 }
 #best4 > .cwrp .best4_ul .best4_item .card figure{
+  overflow: hidden;
   margin: 0;
   display: block;
   position: absolute;
@@ -97,6 +98,8 @@ h2 b{color: #1990ff;}
   transform: rotateY(0deg);
 }
 .card .back {
+  border-radius: 4px;
+  overflow: hidden;
   transform: rotateY( 180deg );
 }
 
@@ -188,34 +191,52 @@ h2 b{color: #1990ff;}
 #best4 > .cwrp .best4_ul .best4_item .front_dl dd{font-size: 16px;}
 #best4 > .cwrp .best4_ul .best4_item .hover{
   z-index: 3;
-  line-height: 80px;
+  /*line-height: 80px;*/
   text-align: center;
   width: 100%;
   font-size: 16px; font-weight: bold;
 }
 #best4 > .cwrp .best4_ul .best4_item .hover span{
-  width: 50%; height: 43px;
+  width: 50%; height: 100px;
+  line-height: 90px;
   float: left;
   box-sizing: border-box;
-  margin-top: 20px;
-  border-right: 1px solid #cdcdcd;
-  line-height: 45px;
 }
 #best4 > .cwrp .best4_ul .best4_item .hover span a{
-  padding: 27px;
-  height: 30px;
+  width: 100%; height: 100%;
+  display: inline-block;
   transition: all 0.1s ease-in-out;
+}
+#best4 > .cwrp .best4_ul .best4_item .hover span:first-child a{
+  color: #1990ff;
+  position: relative;
+}
+#best4 > .cwrp .best4_ul .best4_item .hover span:last-of-type a{
+  color: #ffc821;
+}
+
+#best4 > .cwrp .best4_ul .best4_item .hover span:first-child a::after{
+  position: absolute; top: 18px; right: 0;
+  content: '';
+  width: 1px; height: 43px;
+  background-color: #d3d;
+  display: inline-block;
+}
+#best4 > .cwrp .best4_ul .best4_item .hover:hover span:first-child a::after{
+  display: none;
 }
 #best4 > .cwrp .best4_ul .best4_item .hover span:first-of-type:hover a{
   transition: all 0.1s ease-in-out;
-  color: #1990ff;
+  color: #fff;
+  background-color: #1990ff;
 }
 #best4 > .cwrp .best4_ul .best4_item .hover span:last-of-type{
   border-right: none;
 }
 #best4 > .cwrp .best4_ul .best4_item .hover span:last-of-type:hover a{
   transition: all 0.1s ease-in-out;
-  color: #ffc821;
+  color: #fff;
+  background-color: #ffc821;
 }
 #best4 > .cwrp .best4_ul .best4_item .hover span a{color: #454545;}
 
