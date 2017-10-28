@@ -6,23 +6,27 @@
   <title>판판</title>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/index.css">
 </head>
   <body>
-    <div id="logo">
-      <h1 alt="로고" class="txt_dl">판판</h1>
-    </div>
-    <div class="main_nav">
-      <ul class="main_nav_ul">
-        <li class="main_nav_item"><a href="#">종합</a></li>
-        <li class="main_nav_item"><a href="#">정치</a></li>
-        <li class="main_nav_item"><a href="#">경제</a></li>
-        <li class="main_nav_item"><a href="#">사회</a></li>
-        <li class="main_nav_item"><a href="#">문화</a></li>
-        <li class="main_nav_item"><a href="#">세계</a></li>
-        <li class="main_nav_item"><a href="#">it&#47;과학</a></li>
-        <li class="main_nav_item"><a href="#">철학</a></li>
-      </ul>
+    <div class="fixwrp">
+      <div id="logo">
+        <h1 alt="로고" class="txt_dl">판판</h1>
+      </div>
+      <div class="main_nav">
+        <ul class="main_nav_ul">
+          <li class="main_nav_item select"><a href="#">종합</a></li>
+          <li class="main_nav_item"><a href="#">정치</a></li>
+          <li class="main_nav_item"><a href="#">경제</a></li>
+          <li class="main_nav_item"><a href="#">사회</a></li>
+          <li class="main_nav_item"><a href="#">문화</a></li>
+          <li class="main_nav_item"><a href="#">세계</a></li>
+          <li class="main_nav_item"><a href="#">it&#47;과학</a></li>
+          <li class="main_nav_item"><a href="#">철학</a></li>
+          <!-- <li class="main_nav_item"><a href="#">생활</a></li> -->
+        </ul>
+        <span class="fixnav_bar">
+        </span>
+      </div>
     </div>
     <form action="get">
       <div class="search">
@@ -75,32 +79,25 @@
         </li>
       </ul>
     </div>
-    <div class="underbar">
-      <div class="underbar_plus">
-        <span class="demoSpan1"></span>
+    <div class="underbox">
+      <div class="underbar">
+        <ul class="underbar_list">
+          <li class="flex_left">
+            <div class="under_item select"><a href="#"><span class="undericon"></span>홈</a></div>
+            <div class="under_item"><a href="#"><span class="undericon"></span>재판찾기</a></div>
+          </li>
+          <li class="under_item middle">
+            <span class="icons demoSpan1"></span>
+          </li>
+          <li class="flex_right">
+            <div class="under_item"><a href="#"><span class="undericon"></span>마이페이지</a></div>
+            <div class="under_item"><a href="#"><span class="undericon"></span>판판광장</a></div>
+          </li>
+        </ul>
       </div>
-      <ul class="underbar_list">
-        <li class="flex_left">
-          <a href="#">
-            <span class="underbar_text">홈</span>
-          </a>
-        </li>
-        <li class="flex_left">
-          <a href="#">
-            <span class="underbar_text">재판찾기</span>
-          </a>
-        </li>
-        <li class="flex_right">
-          <a href="#">
-            <span class="underbar_text">판판광장</span>
-          </a>
-        </li>
-        <li class="flex_right">
-          <a href="#">
-            <span class="underbar_text">마이페이지</span>
-          </a>
-        </li>
-      </ul>
     </div>
+
+    <script src="js/common.js"></script>
+
   </body>
 </html>
