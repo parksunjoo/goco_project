@@ -1,13 +1,14 @@
 .ctn{
   padding-top: 90px;
   height: 100%;
+  background-color: #f7f7f7;
 }
 .ctn_ul{
   margin: 0 2.6%;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .ctn_ul_item{
@@ -17,6 +18,7 @@
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 .ctn_ul_item.big{
   width: 100%;

@@ -1,7 +1,7 @@
 span.icons{height:104px; width:104px; display:block; position:relative;}
 
-.demoSpan1{border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px; background:#333;}
+.demoSpan1{border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px; background:#0a9ef8;}
 
-.demoSpan1:before, .demoSpan1:after{content:''; height:8px; width:36px; display:block; background:#fff;  position:absolute; top:50px; left:34px;}
+.demoSpan1:before, .demoSpan1:after{content:''; height:4px; width:20px; display:block; background:#fff;  position:absolute; top:28px; left:20px;}
 
-.demoSpan1:after{height:36px; width:8px; top:36px; left:48px;}
+.demoSpan1:after{height:20px; width:4px; top:20px; left:28px;}

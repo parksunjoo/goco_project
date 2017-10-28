@@ -17,6 +17,17 @@ $navitem.on('click',function(){
   },300,'easeInOutCubic');
 });
 
+var $under = $('.underbox');
+var $underItem = $('.underbox .underbar_list li div');
+
+$underItem.on('click', function(){
+  console.log('123');
+  $underItem.removeClass('select');
+  $(this).addClass('select');
+})
+
+
+
 $('a').on('click',function(evt){
   evt.preventDefault();
 })
