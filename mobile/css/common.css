@@ -1,5 +1,5 @@
 html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,button,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time,menu,select,legend{margin:0;padding:0}
-li{list-style: none;}«»
+li{list-style: none;}
 a{text-decoration: none; color: #2d2d2d;}
 .txt_dl{
   font-size: 0; color: transparent; text-indent: -9999px;}
@@ -13,7 +13,6 @@ body{
 }
 .ctn{
   padding-top: 90px;
-
 }
 .fixwrp{
   width: 100%;
