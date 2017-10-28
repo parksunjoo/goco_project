@@ -3,12 +3,12 @@
   background-color: #f7f7f7;
 }
 .ctn_ul{
-  margin: 0 2.6%;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 2.6%;
 }
 .ctn_ul_item{
   margin-top: 2.6%;

@@ -15,6 +15,7 @@ body{
   padding-top: 90px;
 }
 .fixwrp{
+  z-index: 999;
   width: 100%;
   position: fixed;
   background-color: #fff;
@@ -50,6 +51,9 @@ body{
   width: 12.5%; height: 4px;
   background-color: #0a9ef8;
   display: inline-block;
+}
+.opinion_nav > .main_nav_ul > .main_nav_item{
+  width: 50%;
 }
 
 .underbox{
