@@ -1,7 +1,7 @@
 (function($){
 $(document).ready(function(){
 // !! code start !!
-
+console.log('1123');
 // 상단 네비게이션
 var $navitem = $('.main_nav_ul .main_nav_item');
 var $navbar = $('.fixnav_bar');

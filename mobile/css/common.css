@@ -15,7 +15,7 @@ body{
   padding-top: 90px;
 }
 .fixwrp{
-  z-index: 999;
+  z-index: 10;
   width: 100%;
   position: fixed;
   background-color: #fff;
@@ -60,7 +60,7 @@ body{
   width: 100%;
   display: inline-block;
   position: fixed;
-  z-index: 999;
+  z-index: 20;
   bottom:  0;
   background-color: #fff;
 }
