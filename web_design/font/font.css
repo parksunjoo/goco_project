@@ -4,7 +4,9 @@
   font-weight: 500;
   font-style: normal;
 }*/
-@font-face {
+
+
+/*@font-face {
   font-family: 'NamnumBarunGothic';
   src: url(NanumBarunGothic.ttf) format('truetype');
   font-style: normal;
@@ -18,7 +20,7 @@
   font-family: 'NamnumBarunGothic';
   src: url(NanumBarunGothicLight.ttf) format('truetype');
   font-style: lighter;
-}
+}*/
 
 /*@font-face {
   font-family: 'NamnumBarunGothic';
@@ -26,12 +28,12 @@
   font-style: thin;
 }*/
 
-/*@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
-@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');*/
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 /*@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
 
 body {
   /*font-family: YoonGothic740;*/
-  /*font-family: 'Nanum Gothic', sans-serif;*/
-  font-family: 'NamnumBarunGothic', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
+  /*font-family: 'NamnumBarunGothic', sans-serif;*/
 }

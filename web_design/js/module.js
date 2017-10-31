@@ -13,7 +13,9 @@ $('.side ul li .ha').hover(
   },500,'easeOutQuint');
   $(this).find('.img').stop().animate({
     'filter':'grayscale(50%)'
+    ,'background-size':'130% 130%'
   },500,'easeOutQuint');
+
 },function(){
   $(this).find('.darkarea').stop().animate({
     'opacity':'',

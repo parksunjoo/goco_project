@@ -69,7 +69,6 @@ $liwrpP.hover(function(){
   //   'transform':'rotateY(0deg)'
   // })
   $(this).find('.liwrp').animate({
-
   },500)
   $(this).find('.dark').fadeOut();
   $(this).find('.hover').fadeOut();
