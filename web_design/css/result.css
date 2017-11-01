@@ -173,7 +173,7 @@ h2 b{color: #1990ff;}
 #best4 > .cwrp .best4_ul .best4_item:nth-child(1) .vsimg{background: url(../img/best4_1.jpg) no-repeat;background-size: cover;}
 #best4 > .cwrp .best4_ul .best4_item:nth-child(2) .vsimg{background: url(../img/best4_2.jpg) no-repeat;background-size: cover;}
 #best4 > .cwrp .best4_ul .best4_item:nth-child(3) .vsimg{background: url(../img/best4_3.jpg) no-repeat;background-size: cover;}
-#best4 > .cwrp .best4_ul .best4_item:nth-child(4) .vsimg{background: url(../img/best4_4.jpg) no-repeat;background-size: cover;}
+#best4 > .cwrp .best4_ul .best4_item:nth-child(4) .vsimg{background: url(../img/best4_4.jpg) no-repeat;background-size: cover; background-position: -100px 0;}
 #best4 > .cwrp .best4_ul .best4_item .front_dl{
   z-index: 2;
   padding-top: 25px;
@@ -219,7 +219,7 @@ h2 b{color: #1990ff;}
   position: absolute; top: 18px; right: 0;
   content: '';
   width: 1px; height: 43px;
-  background-color: #d3d;
+  background-color: #cdcdcd;
   display: inline-block;
 }
 #best4 > .cwrp .best4_ul .best4_item .hover:hover span:first-child a::after{

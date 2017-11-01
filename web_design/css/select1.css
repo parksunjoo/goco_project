@@ -160,13 +160,13 @@ section .leftside{
 }
 .comment_1,.comment_2{position: relative;overflow: hidden;}
 .comment_1,.comment_2 ul{
-  overflow: hidden;
+  position: relative;
   height: 630px;
   overflow-y: auto;
 }
 .comment-content{
   z-index: 10;
-  top: -630px;
+  bottom: 630px;
   position: absolute;
   width: 100%; height: 100%;
   background: #fff;
@@ -235,6 +235,62 @@ section .leftside{
   background: url(../img/user_icons.png) no-repeat;
   background-size: auto 100%;
 }
+.comment_1 ul li:nth-of-type(2) .userimg{
+  position: relative; top: 30px; left: 33px;
+  display: inline-block;
+  width: 50px; height: 50px;
+  background: url(../img/user_icons.png) no-repeat;
+  background-position: -200px 0;
+  background-size: auto 100%;
+}
+.comment_1 ul li:nth-of-type(3) .userimg{
+  position: relative; top: 30px; left: 33px;
+  display: inline-block;
+  width: 50px; height: 50px;
+  background: url(../img/user_icons.png) no-repeat;
+  background-position: -100px 0;
+  background-size: auto 100%;
+}
+.comment_1 ul li .userimg::after{
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0;
+  background-color: #1990ff;
+  width: 10px; height: 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+.comment_1 ul li:first-of-type .userimg::after{
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0;
+  background-color: #ffd321;
+  width: 10px; height: 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+.comment_1 ul li:nth-of-type(2) .userimg::after{
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0;
+  background-color: #1990ff;
+  width: 10px; height: 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+.comment_1 ul li:nth-of-type(3) .userimg::after{
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0;
+  background-color: #acdc4f;
+  width: 10px; height: 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  display: inline-block;
+}
 .comment_1 ul li .text{
   display: inline-block;
   top: 40px; left:110px;
@@ -298,6 +354,7 @@ section .leftside{
   height: 905px;
   overflow-y: scroll;
 }
+.leftside ul::-webkit-scrollbar{display: none;}
 .leftside li.listpost_item{
   height: 200px;
   border-bottom: 1px solid #cdcdcd;

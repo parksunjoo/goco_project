@@ -37,9 +37,11 @@
   <div class="headwrp">
     <div class="cwrp">
       <h1>
-        <span class="txt_dl icons">로고</span>
-        <span class="txt_dl icons">판판</span>
-        <p>우리 모두의 재판, 판판</p>
+        <a href="index.html">
+          <span class="txt_dl icons">로고</span>
+          <span class="txt_dl icons">판판</span>
+          <p>우리 모두의 재판, 판판</p>
+        </a>
       </h1>
       <form action="get">
         <div>
@@ -140,7 +142,8 @@
           <div class="content">
             <h3>노세이프존은 구시대적 발상입니다.</h3>
             <span class="close"></span>
-            <span class='userimg'></span>
+            <span class='userimg'>
+            </span>
             <p>
               올해의 유행은 '노키즈존(No Kids Zone)'이라고 해도 과언이 아닐 것이다.<br />
               노키즈존은 말 그대로 아이들의 출입자체를거부하는 가게들을 일컫는 단어로 몇 년
@@ -164,13 +167,13 @@
               찾아가 그들의 의견과 경험에 대해 들어봤다.
             </p>
             <div class="post_icon">
-              <span class="post_up"></span>
+              <span class="post_up">220</span>
               <span class="post_re"></span>
             </div>
           </div>
 
         </div>
-          <ul>
+          <ul class="comment_1-ul">
             <li><a href="#">
               <span class="userimg"></span>
               <div class="text">
@@ -228,8 +231,8 @@
           <p class="notice">한번 선택한 의견은 24시간 내에 변경이 불가능하니 주의해주세요.</p>
           <ul>
             <li><a href="select_2.html">원고</a></li>
-            <li><a href="#">배심원</a></li>
-            <li><a href="#">피고</a></li>
+            <li><a href="select_2.html">배심원</a></li>
+            <li><a href="select_2.html">피고</a></li>
           </ul>
         </div>
       </div>
@@ -255,13 +258,16 @@
 <script>
   $(function(){
     $('.comment_1 > ul > li').click(function(){
+      $('.comment_1, .comment_2 ul').css('overflow-y','hidden');
       $('.comment-content').animate({
-        top: 0
+        'bottom': '0'
+
       },400,'easeOutQuint');
     });
     $('.content > .close').click(function(){
+      $('.comment_1, .comment_2 ul').css('overflow-y','auto');
       $('.comment-content').animate({
-        top: -630
+        'bottom': '630px'
       },400,'easeOutQuint');
     });
     $('.comment_1 > ul > li > a').click(function(e){

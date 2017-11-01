@@ -50,6 +50,7 @@
 
 #module .img{
   width: 100%; height: 100%;
+  transition: all 0.3s ease;
 }
 #module .ha{
   transition: all 0.3s ease;
@@ -264,12 +265,12 @@ section.etc .etc_ul{
 }
 .etc_ul .etc_item .item_header::after{
   cursor:pointer;
-  position: relative; top: 7px; left: 5px;
+  position: relative; top: 12px; left: 5px;
   content: '';
   display: inline-block;
   width: 27px; height: 27px;
-  background: url(../img/user_icons.png)no-repeat;
-  background-position: -215px 0;
+  background: url(../img/icons.png)no-repeat;
+  background-position: -138px 0;
 }
 .etc_ul .etc_item .item_p{
   position: relative;
@@ -284,15 +285,16 @@ section.etc .etc_ul{
 }
 .etc_ul .etc_item .item_p .lookup{
   position: absolute; bottom:0; left: 130px;
+  color: #8b8b8b;
 
 }
 .etc_ul .etc_item .item_p .lookup::before{
-  position: relative; top: 6px;
+  position: relative; top: 14px;
   content:'';
   width: 27px; height: 27px;
   display: inline-block;
-  background: url(../img/user_icons.png) no-repeat;
-  background-position: -242px 0;
+  background: url(../img/icons.png)no-repeat;
+  background-position: -114px 0;
 }
 .etc_ul .etc_item .item_p p a{
 
@@ -311,22 +313,19 @@ section.etc .etc_ul{
 .etc_ul .etc_item:nth-child(3) .item_p::before{
   background: url(../img/module_13.jpg) no-repeat;
 }
-
-
+.etc_ul .etc_item:last-of-type{
+  border-left: 1px solid #dedede;
+}
 .etc_ul .etc_item .inner_item {
   display: inline-block;
-  width: 100%;
-  padding: 38px 0;
+  width: 100%; height: 34px;
+  padding: 25px 0;
   border-top: 1px solid #dedede;
 }
 .etc_ul .etc_item:last-child .inner_item {
   border: none;
 }
 
-.etc_ul .etc_item .inner_item::before {
-  content: '> ';
-  font-family: sans-serif;
-}
 .etc_ul .etc_item:last-child .mincwrp{
   width: 260px; margin: 0 auto;
 }
@@ -335,3 +334,4 @@ section.etc .etc_ul{
   background: url(../img/module_14.jpg) no-repeat;
   margin-bottom: 30px;
 }
+.etc_item h4{margin-bottom: 15px;}
