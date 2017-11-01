@@ -6,6 +6,9 @@ a{text-decoration: none; color: #2d2d2d;}
 html{
   height: 100%;
 }
+*::-webkit-scrollbar{
+  display: none;
+}
 body{
   letter-spacing: -1px;
   box-sizing: border-box;
