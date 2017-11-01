@@ -29,9 +29,9 @@ $underItem.on('click', function(){
   $(this).addClass('select');
 })
 
-$('a').on('click',function(evt){
-  evt.preventDefault();
-})
+// $('a').on('click',function(evt){
+//   evt.preventDefault();
+// })
 
 // document
 navClick();

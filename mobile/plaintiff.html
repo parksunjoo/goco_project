@@ -154,13 +154,6 @@
           </div>
           <div class="chat_ctn">
             <ul class="chat_ctn-talk">
-              <li>
-                <span class="chat_ctn-talk-img"></span>
-                <div class="chat_ctn-talk-box">
-                  <p>pandda22</p>
-                  asdfasdfasdf
-                </div>
-              </li>
             </ul>
           </div>
           <div class="chat_footer">
@@ -173,28 +166,74 @@
             </div>
           </div>
         </div>
+        <div class="darkbg"></div>
       </div>
 
         <div class="underbox">
           <div class="underbar">
             <ul class="underbar_list">
               <li class="flex_left">
-                <div class="under_item select"><a href="#"><span class="undericon"></span>홈</a></div>
-                <div class="under_item"><a href="#"><span class="undericon"></span>재판찾기</a></div>
+                <div class="under_item"><a href="index.html"><span class="undericon"></span>홈</a></div>
+                <div class="under_item"><a href="search.html"><span class="undericon"></span>재판찾기</a></div>
               </li>
               <li class="under_item middle">
-                <span class="icons demoSpan1"></span>
+                <span class="icons talkSpan"></span>
               </li>
               <li class="flex_right">
                 <div class="under_item"><a href="#"><span class="undericon"></span>마이페이지</a></div>
-                <div class="under_item"><a href="#"><span class="undericon"></span>판판광장</a></div>
+                <div class="under_item select"><a href="#"><span class="undericon"></span>판판광장</a></div>
               </li>
             </ul>
           </div>
         </div>
     </div>
 
-      <script src="js/common.js"></script>
+<script src="js/common.js"></script>
+<script>
+var $underBtn = $('.underbox .under_item.middle .icons');
+
+$underBtn.on('click', function(){
+  if($(this).hasClass('talkSpan')){
+    $(this).removeClass('talkSpan').addClass('demoSpan2');
+    $('.darkbg').fadeIn(450);
+    $('.content_list .chat').animate({
+      'bottom':'0'
+    },500,'easeInOutCubic');
+
+  }else{
+    $(this).removeClass('demoSpan2').addClass('talkSpan');
+    $('.darkbg').fadeOut(450);
+    $('.content_list .chat').animate({
+      'bottom':'-100%'
+    },500,'easeInOutCubic');
+  }
+});
+
+var botTexts = [
+  '누구나,모두 함께 토론하는 판판!',
+  '다른 사람의 텍스트는 이렇게 보이게 됩니다.',
+  '지금부터 토론을 시작하지',
+  'ㅋㅋㅋㅋㅋㅋㅋㅋ'];
+$('#chat_submit').on('click',function(){
+  var nowval = $('#usersay').val();
+  if(!!nowval){
+    $('#usersay').remove();
+    var textareaNode = $("<textarea name='' id='usersay' cols='50' rows='5' placeholder='욕설과 타인 비방은 서비스 이용에 제재를 받을 수 있습니다'.></textarea>");
+    $('.chat_footer-text').prepend(textareaNode);
+    var mychatNode = $("<li class='mychat'><div class='chat_ctn-talk-box'><p>"+ nowval+"<p></div></li>");
+    $(".chat_ctn-talk").append(mychatNode);
+  }else{
+    alert('텍스트를 입력해주세요.');
+  }
+  console.log(nowval);
+})
+var testbot = setInterval(function(){
+  var ranNum = Math.floor(Math.random() * botTexts.length);
+  var testbotNode = $("<li class='otherchat'><span class='chat_ctn-talk-img'></span><div class='chat_ctn-talk-box'><p>pandda22</p>"+ botTexts[ranNum]+"</div></li>");
+  $(".chat_ctn-talk").append(testbotNode);
+},3000);
+
+</script>
 
   </body>
 </html>

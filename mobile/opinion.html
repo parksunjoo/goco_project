@@ -201,10 +201,10 @@ body{
         <div class="click_up-content_select">
           <ul class="content_select-ul">
             <li>
-              <a href="#">원고</a>
+              <a href="plaintiff.html">원고</a>
             </li>
             <li>
-              <a href="#">피고</a>
+              <a href="plaintiff.html">피고</a>
             </li>
             <li>
               <a href="#">배심원</a>
@@ -221,15 +221,15 @@ body{
   <div class="underbar">
     <ul class="underbar_list">
       <li class="flex_left">
-        <div class="under_item select"><a href="#"><span class="undericon"></span>홈</a></div>
-        <div class="under_item"><a href="#"><span class="undericon"></span>재판찾기</a></div>
+        <div class="under_item"><a href="index.html"><span class="undericon"></span>홈</a></div>
+        <div class="under_item"><a href="search.html"><span class="undericon"></span>재판찾기</a></div>
       </li>
       <li class="under_item middle">
         <span class="icons voteSpan"></span>
       </li>
       <li class="flex_right">
         <div class="under_item"><a href="#"><span class="undericon"></span>마이페이지</a></div>
-        <div class="under_item"><a href="#"><span class="undericon"></span>판판광장</a></div>
+        <div class="under_item select"><a href="#"><span class="undericon"></span>판판광장</a></div>
       </li>
     </ul>
   </div>
@@ -244,35 +244,44 @@ $underBtn.on('click', function(){
     $('.click_up').stop().animate({
       'bottom':'0'
     },500,'easeInOutCubic');
-    $('.ctn .darkbg').stop().animate({
-      'opacity':'1'
-    },500,'easeInOutCubic');
+    $('.ctn .darkbg').fadeIn(450);
   }else{
     $(this).removeClass('demoSpan2').addClass('voteSpan');
     $('.click_up').stop().animate({
       'bottom':'-230px'
     },500,'easeInOutCubic');
-    $('.ctn .darkbg').stop().animate({
-      'opacity':'0'
-    },500,'easeInOutCubic');
+    $('.ctn .darkbg').fadeOut(450);
   }
 });
 var $navBtn = $('.main_nav_ul .main_nav_item');
 $navBtn.on('click', function(){
   if($(this).index() == 0){
-    console.log('0이다.')
     $('.ctn_box').animate({
       'left':'0'
     },450,'easeInOutCubic');
-
   }else{
-    console.log('아니다')
     $('.ctn_box').animate({
       'left':'-100%'
     },450,'easeInOutCubic');
   }
 });
+var $ctn2ContnetItem = $('.content_list_ul li');
+$ctn2ContnetItem.on('click',function(){
+  var thispa = $(this).parent('ul');
+  $('.user_title-click').animate({
+    'top':'200px'
+  },450,'easeInOutCubic');
+});
+var $clickdownClose = $('.click_down-header .close');
+$clickdownClose.on('click',function(){
+  $('.user_title-click').animate({
+    'top':'-410px'
+  },450,'easeInOutCubic');
+});
 
+
+
+console.log('ad');
 // $(window).scroll(function(){
 //   console.log($(this).scrollTop());
 // })

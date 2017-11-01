@@ -8,13 +8,23 @@ transition: all 0.3s ease;}
 .demoSpan1:after{
   height:20px; width:4px; top:20px; left:28px;}
 
-.voteSpan::before{
+  .voteSpan::before{
+    content: '';
+    display: inline-block;
+    width: 34px; height: 34px;
+    background: url(../img/icons.png) no-repeat;
+    background-size: 220px;
+    background-position: -148px 0;
+    position: absolute;
+    top: 13px; left: 13px;
+  }
+.talkSpan::before{
   content: '';
   display: inline-block;
-  width: 34px; height: 34px;
+  width: 36px; height: 36px;
   background: url(../img/icons.png) no-repeat;
-  background-size: 220px;
-  background-position: -148px 0;
+  background-size: 210px;
+  background-position: -70px -70px;
   position: absolute;
   top: 13px; left: 13px;
 }
