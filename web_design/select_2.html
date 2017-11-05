@@ -269,7 +269,12 @@
           <ul>
           </ul>
         </div>
+        <div class="writingcheck">
+          123
+        </div>
       </div>
+
+
       <div class="choice">
           <div class="user_id">
             <div class="mincwrp">
@@ -339,9 +344,19 @@ $('.rightside .opinion li').on('click',function(){
   $('.opinion').find('li').eq($(this).index()).addClass('select');
 })
 //document
-// $('.rightside a').on('click',function(evt){
-//   evt.preventDefault();
-// })
+$('.rightside a').on('click',function(evt){
+  evt.preventDefault();
+  console.log();
+  if($(this).parent().index() == 0){
+    $('.comment_2').stop().animate({
+
+    });
+  }else if($(this).parent().index() == 1){
+    $('.comment_2').stop().animate({
+
+    });
+  }
+})
 });//ready
 })(jQuery);
 

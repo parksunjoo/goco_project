@@ -84,6 +84,7 @@ section .leftside{
 }
 .rightside .opinion{
   height: 45px;
+  z-index: 2;
 }
 .rightside .opinion li{
   text-align: center;
@@ -115,6 +116,7 @@ section .leftside{
   height: 140px;
   background-color: #f9f9f9;
   border-bottom: 1px solid #cdcdcd;
+  z-index: 2;
 }
 .rightside .infomation > ul{
 
@@ -516,6 +518,8 @@ section .leftside{
 
 .comment_2{
   color: #2b2b2b;
+  overflow: hidden;
+  position: relative;
 }
 .comment_2 ul{
   display: flex;
@@ -560,4 +564,14 @@ section .leftside{
 .comment_2 .my_chat .innerchat{
   float: right;
   background-color: #ebebeb;
+}
+
+.writingcheck{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 90%;
+  z-index:0;
+  background-color: #d3d;
 }
