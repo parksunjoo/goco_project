@@ -17,6 +17,7 @@ section article{
 section .leftside{
   width: 760px;
   border: 1px solid #cdcdcd;
+  border-radius: 5px;
 }
 .leftside .mincwrp{
   width: 680px; margin: 0 auto;
@@ -79,6 +80,7 @@ section .leftside{
   overflow: hidden;
   width: 550px;
   border: 1px solid #cdcdcd;
+  border-radius: 5px;
 }
 .rightside .opinion{
   height: 45px;
@@ -243,19 +245,28 @@ section .leftside{
   background-size: auto 100%;
 }
 .comment_1 ul li:nth-of-type(2) .userimg{
-  position: relative; top: 30px; left: 33px;
-  display: inline-block;
-  width: 50px; height: 50px;
   background: url(../img/user_icons.png) no-repeat;
   background-position: -200px 0;
   background-size: auto 100%;
 }
 .comment_1 ul li:nth-of-type(3) .userimg{
-  position: relative; top: 30px; left: 33px;
-  display: inline-block;
-  width: 50px; height: 50px;
   background: url(../img/user_icons.png) no-repeat;
   background-position: -100px 0;
+  background-size: auto 100%;
+}
+.comment_1 ul li:nth-of-type(4) .userimg{
+  background: url(../img/user_icons.png) no-repeat;
+  background-position: -50px 0;
+  background-size: auto 100%;
+}
+.comment_1 ul li:nth-of-type(5) .userimg{
+  background: url(../img/user_icons.png) no-repeat;
+  background-position: -150px 0;
+  background-size: auto 100%;
+}
+.comment_1 ul li:nth-of-type(7) .userimg{
+  background: url(../img/user_icons.png) no-repeat;
+  background-position: -50px 0;
   background-size: auto 100%;
 }
 .comment_1 ul li .userimg::after{
@@ -345,16 +356,41 @@ section .leftside{
 .choice ul li{
   text-align: center; line-height: 48px;
   width: 150px; height: 48px;
-  background-color: #ddd;
   border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+
 }
-.choice ul li:nth-child(1){background-color: #1990ff;}
-.choice ul li:nth-child(2){background-color: #acdc4f;}
-.choice ul li:nth-child(3){background-color: #ffd619;}
+.choice ul li > *{
+  transition: all 0.2s ease-in-out;
+}
 .choice ul li a{
-  color: #fff; font-weight: bold;
+  color: #616161;
+}
+.choice ul li:nth-child(1){
+  border: 1px solid #1990ff;
+}
+.choice ul li:nth-child(2){
+  border: 1px solid #acdc4f;
+}
+.choice ul li:nth-child(3){
+  border: 1px solid #ffd619;
+}
+.choice ul li:nth-child(1):hover{
+  background-color: #1990ff;
+}
+.choice ul li:nth-child(2):hover{
+  background-color: #acdc4f;
+}
+.choice ul li:nth-child(3):hover{
+  background-color: #ffd619;
+}
+.choice ul li a{
+  font-weight: bold;
   display: inline-block;
   width: 100%; height: 100%;
+}
+.choice ul li:hover a{
+  color: #fff;
 }
 
 .leftside ul{
