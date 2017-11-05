@@ -292,8 +292,8 @@ h2 b{color: #1990ff;}
   border-radius: 40px;
   margin-right: 5px;
 }
-#total table tbody tr td:nth-child(2) ul li:nth-child(2)::before{background-color: #fa6060;}
-#total table tbody tr td:nth-child(2) ul li:nth-child(3)::before{background-color: #5bacff;}
+#total table tbody tr td:nth-child(2) ul li:nth-child(2)::before{background-color: #5bacff;}
+#total table tbody tr td:nth-child(2) ul li:nth-child(3)::before{background-color: #ffd321;}
 #total .totalimg{
   position: absolute; top: 0; left: 0;
   display: inline-block;
