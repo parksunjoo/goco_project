@@ -18,7 +18,6 @@ var navCon = {
       $('nav ul').stop().animate({
         'margin-left':'0'
       },500,'easeOutQuint');
-
       // console.log('logoli가 있어야대.');
     }else{
       $('nav form').stop().animate({
@@ -30,6 +29,34 @@ var navCon = {
       $('nav').stop().animate({
         'min-width':'660px'
       },500,'easeOutQuint');
+      // console.log('logoli가 읎어야ㅕ대');
+    }
+  },
+  readylogo:function(){
+    var now = $(window).scrollTop();
+    // console.log(now);
+    if(now > 179){
+      $('nav').css({
+        'min-width':'1020px'
+      });
+
+      $('nav form').css({
+        'top':'11px'
+      });
+      $('nav ul').css({
+        'margin-left':'0'
+      });
+      // console.log('logoli가 있어야대.');
+    }else{
+      $('nav form').css({
+        'top':'60px'
+      });
+      $('nav ul').css({
+        'margin-left':'-110px'
+      });
+      $('nav').css({
+        'min-width':'660px'
+      });
       // console.log('logoli가 읎어야ㅕ대');
     }
   }
@@ -75,6 +102,6 @@ $liwrpP.hover(function(){
 });
 
 // document
-navCon.logo();
+navCon.readylogo();
 });//ready
 })(jQuery);
