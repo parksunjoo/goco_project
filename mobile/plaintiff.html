@@ -210,10 +210,10 @@ $underBtn.on('click', function(){
 });
 
 var botTexts = [
-  '누구나,모두 함께 토론하는 판판!',
-  '다른 사람의 텍스트는 이렇게 보이게 됩니다.',
-  '지금부터 토론을 시작하지',
-  'ㅋㅋㅋㅋㅋㅋㅋㅋ'];
+  '안녕하세요',
+  '이 주제에 공감합니다.',
+  '전 콜라님의 의견에 추천을 주고 싶어요.',
+  '저도 공감합니다.'];
 $('#chat_submit').on('click',function(){
   var nowval = $('#usersay').val();
   if(!!nowval){
@@ -231,7 +231,7 @@ var testbot = setInterval(function(){
   var ranNum = Math.floor(Math.random() * botTexts.length);
   var testbotNode = $("<li class='otherchat'><span class='chat_ctn-talk-img'></span><div class='chat_ctn-talk-box'><p>pandda22</p>"+ botTexts[ranNum]+"</div></li>");
   $(".chat_ctn-talk").append(testbotNode);
-},3000);
+},4000);
 
 </script>
 
