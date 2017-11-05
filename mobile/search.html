@@ -37,8 +37,8 @@
       <form action="get">
         <span class="get-box">
           <div class="search">
-            <input type="text" value class="search_text">
-            <button class="search_btn"></button>
+            <input type="text" placeholder="노키즈존" value class="search_text">
+            <a href="#" class="search_btn"></a>
           </div>
         </span>
       </form>
@@ -121,6 +121,10 @@
     </div>
 
     <script src="js/common.js"></script>
-
+    <script>
+      $('.search_btn').on('click', function(){
+        $('.search_ctn_ul').css('opacity','1');
+      });
+    </script>
   </body>
 </html>

@@ -115,6 +115,7 @@
 .user-title p{font-size: 10px; color: #b7b7b7;}
 .user-content{font-size: 11px; line-height: 15px;margin: 16px 0;}
 .click_down-icon{font-size: 11px; margin-left: 4px;}
+.click_down-icon_up{font-size: 12px;}
 .click_down-icon_up::before{
   content: '';
   width: 14px; height: 14px;
@@ -122,6 +123,9 @@
   background-image: url(../img/icons_2.png);
   background-position:-36px -2px;
   margin-right: 4px;
+}
+.click_down-icon_re{
+  font-size: 12px; margin-left: 10px;
 }
 .click_down-icon_re::before{
   content:'';
@@ -132,7 +136,7 @@
   margin-right: 4px;
 }
 .click_down-icon_time{
-  position: absolute; right: 20px;color: #ebebeb;
+  position: absolute; right: 20px;color: #9f9f9f;
   line-height: 16px;
 }
 .darkbg{
