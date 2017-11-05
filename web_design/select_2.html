@@ -20,8 +20,8 @@
       <li><a href="index.html" class="txt_dl">로고</a></li>
       <li><a href="#">서비스소개</a></li>
       <li><a href="hot.html">핫이슈재판</a></li>
-      <li><a href="#" class="select">카테고리</a></li>
-      <li><a href="#">판판광장</a></li>
+      <li><a href="result.html" >카테고리</a></li>
+      <li><a href="#" class="select">판판광장</a></li>
       <li class="nav_id"><a href="#" >로그인</a></li>
       <li class="nav_join"><a href="#">회원가입</a></li>
     </ul>
@@ -219,7 +219,7 @@
     <article class="rightside">
       <ul class="opinion">
         <li class="select"><a href="#">실시간 채팅방</a></li>
-        <li><a href="select_1.html">게시글 작성</a></li>
+        <li><a href="writing.html">게시글 작성</a></li>
         <li><a href="select_1.html">원고 대표의견</a></li>
       </ul>
       <div class="infomation">
@@ -338,9 +338,9 @@ $('.rightside .opinion li').on('click',function(){
   $('.opinion').find('li').eq($(this).index()).addClass('select');
 })
 //document
-$('.rightside a').on('click',function(evt){
-  evt.preventDefault();
-})
+// $('.rightside a').on('click',function(evt){
+//   evt.preventDefault();
+// })
 });//ready
 })(jQuery);
 
