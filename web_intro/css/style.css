@@ -90,7 +90,10 @@ section.section_slider{
   font-size: 16px;
 }
 .slider_item_img{
-  border: 1px solid #000;
+  background: url(../img/sliderimg_1.png) no-repeat;
+  border: 1px solid #000; height: 200px;
+  -webkit-background-size: contain;
+  background-size: contain;
 }
 .slider_wrp .arrowbox{
   display: inline-block;
