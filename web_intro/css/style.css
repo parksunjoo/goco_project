@@ -1,9 +1,15 @@
 body{
   letter-spacing: -1px;
+  color: #2d2d2d;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 section{
   margin-top: 80px;
+  text-align: center;
+
 }
+/*transform: skew(-40deg);*/
+
 section h2{
   font-size: 34px; font-weight: bold;
 }
@@ -12,24 +18,56 @@ nav{
   z-index: 999;
   width: 100%;
   display: block;
-  background-color: #292929;
+  background-color: #1990ff;
 }
 .nav_ul{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  justify-content: center;
+  align-items: center;
   max-width:1320px;
   margin: 0 auto;
 }
 .nav_item{
-  width: 100px;
+  position: relative;
+  height: 60px;
+  /*border: 1px solid #3d3;*/
 }
-.nav_item a{
-  padding: 20px 10px;
-  color: #fff;
-  font-size: 16px;
+.nav_item_skew{
+  position: absolute; top: 0; left: 0;
+  width: 100%;height: 60px;
+  transform: skew(-22deg);
+  cursor: pointer;
+  background-color: #fff;
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.nav_item_text{
+  width: 100%; height: 100%; line-height: 60px;
+  color: #2d2d2d;
+  font-size: 16px; font-weight: bold;
+  position: absolute; top: 0; left: 36px;
+  z-index: 33;
+  cursor: pointer;
+}
+.nav_item.active .nav_item_text{
+  color: #1990ff;
+  display: inline;
+  background-color: #d3d;
+}
+.nav_item:not(:last-child) .nav_item_text .bar{
+  position: absolute; top: 5px; right: 34px;
+  transform: rotate(22deg);
   display: inline-block;
-  width: 100%;
+  width: 1px; height: 50px;
+  background-color: #e8e8e8;
+}
+.nav_item_textw{
+  color: #fff;
+  padding: 0 36px;
+  font-size: 16px;
+  height: 100%;
 }
 
 
@@ -54,7 +92,6 @@ header{
 
 
 section.section_slider{
-  border: 1px solid #d3d;
   color: #fff;
 }
 .section_slider h2{
@@ -76,6 +113,7 @@ section.section_slider{
   width: 33.3%;
   text-align: center;
   border: 1px solid #d3d;
+  position: relative;
 }
 .slider_item_num{
   width: 94%; margin: 0 auto;
@@ -84,20 +122,22 @@ section.section_slider{
   font-size: 40px;
 }
 .slider_item_h{
-  font-size: 40px; font-weight: bold;
+  font-size: 34px; font-weight: bold;
+  margin: 20px 0;
 }
 .slider_item_p{
   font-size: 16px;
 }
 .slider_item_img{
-  background: url(../img/sliderimg_1.png) no-repeat;
-  border: 1px solid #000; height: 200px;
+  position: absolute; bottom: 0; width: 100%;height: 65%;
+  background: url(../img/sliderimg_1.png) no-repeat center;
+  border: 1px solid #000;
   -webkit-background-size: contain;
   background-size: contain;
 }
 .slider_wrp .arrowbox{
   display: inline-block;
-  position: absolute;
+  position: absolute; top: 0;  left: 0;
   border: 5px solid #3d3;
 }
 .slider_wrp .arrowbox > span{
@@ -105,15 +145,17 @@ section.section_slider{
 
 
 
-section .section_what{
-
+section.section_what{
 }
 .section_what{
 
 }
+.what_main{
+  font-size: 68px;
+}
 
 
-section .section_have4{
+section.section_have4{
 
 }
 .section_have4{
