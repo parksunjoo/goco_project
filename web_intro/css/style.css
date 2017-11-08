@@ -62,14 +62,39 @@ section .section_howto{
 }
 
 
-section .section_video{
+section.section_video{
 
 }
 .section_video{
-
+  position: relative;
+  width: 100%; height: 100%;
+  background: url(../img/videobackground.jpg) no-repeat;
+  z-index: 1;
+  text-align: center;
 }
-
-
+.section_video::before{
+  content: '';
+  position: absolute;
+  top: 0; left:0; right:0; bottom:0;
+  background: inherit;
+  z-index:-1;
+  filter: blur(12px);
+  -webkit-filter: blur(12px);
+  -moz-filter: blur(12px);
+  -o-filter: blur(12px);
+}
+.video_dark{
+  position: absolute;
+  z-index: -1  ;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.67);
+  height: 100%; width: 100%;
+}
+.video_btn_ul li{
+  border: 1px solid #fff;
+  display: inline-block;
+}
+.video_btn_ul li a{color: #fff;}
 section .section_weare{
 
 }
