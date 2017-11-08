@@ -222,14 +222,13 @@ section .rightside{
 }
 
 .rightside ul li:nth-child(1) .img{background: url(../img/module_2.jpg) no-repeat;
-  background-position:-30px 0px;
+  background-position: 0 0;
 }
 .rightside ul li:nth-child(2) .img{background: url(../img/module_4.jpg) no-repeat;
   background-position: -100px 0px;
 }
 .rightside ul li:nth-child(3) .img{background: url(../img/module_3.jpg) no-repeat;
   background-position:0px 0px;
-  background-position: -135px -20px;
 }
 .rightside ul li:nth-child(4) .img{background: url(../img/module_6.jpg) no-repeat;
   background-position:0px 0px;
