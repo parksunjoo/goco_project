@@ -1,10 +1,32 @@
 nav{
-
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  display: block;
+  padding: 20px 0;
+  background-color: #292929;
+}
+.nav_ul{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  max-width:1320px;
+  margin: 0 auto;
+}
+.nav_item{
+  padding: 0 10px;
+}
+.nav_item a{
+  color: #fff;
+  font-size: 16px;
+  width: 100%; height: 100%;
+  display: inline-block;
+  background-color: #d3d;
 }
 
 
 header{
-
+  padding-top: 60px;
 }
 
 
