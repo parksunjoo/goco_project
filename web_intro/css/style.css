@@ -244,9 +244,12 @@ section .section_howto{
 
 }
 .section_howto{
-
+  background-color: #444242;
 }
-
+.howto_monitor{
+  border: 8px solid #fff;border-radius: 10px;
+  width: 50%;
+}
 
 section.section_video{
 
