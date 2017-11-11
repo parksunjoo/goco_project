@@ -71,27 +71,56 @@ var bracketAnimate = function(){
 // have4..
 
 var have4Interation = function(){
-  var $item = $('.have4_item'),
-      $conItem = $('.have4_content_item');
-      $conItemAct = $('.have4_content_item.active');
-  $item.on('click',function(){
-    // itemClickFunc();
-    var thisIndex = $(this).index(),
-        itemW = $item.outerWidth(true,true)+4;
-    $item.removeClass('active').css({'opacity':'0'});
-    $(this).addClass('active').css({'opacity':'1'});
-    $(this).stop().animate({
-       'right': thisIndex * itemW + 'px'
-    });
-  });
-  var itemClickFunc = function(){
-    var itemH = $conItemAct.height()/2;
+
+  var $have4ul = $('.have4_ul ul');
+      $item = $('.have4_item'),
+      $cont =  $('.have4_content');
+      $conItem = $('.have4_content_item'),
+      $closeBtn = $('.have4_content_close');
+
+  var itemClickFunc = function(thisindex){
+    $conItem.removeClass('active');
+    $conItem.eq(thisindex).addClass('active');
+    var $conItemAct = $('.have4_content_item.active');
+    var itemH = $conItemAct.height() / 2;
     $conItem.css({
       'top':'50%',
       'margin-top': '-'+ itemH + 'px'
     });
-    console.log(itemH);
   };
+
+  var clickPhase = function(){
+    var thisIndex = $(this).index(),
+        itemW = $item.outerWidth(true,true)+4,
+        contW = $have4ul.width() - 500;
+    itemClickFunc(thisIndex);
+    $item.removeClass('active').css({'opacity':'0'});
+    $(this).addClass('active').css({'opacity':'1'});
+    $(this).stop().animate({
+       'right': thisIndex * itemW + 'px'
+    },500,'easeInOutCubic');
+    $cont.stop().animate({
+      'opacity':'1',
+      'width': contW + 'px'
+    },800,'easeInOutCubic');
+    $conItem.fadeOut();
+    $conItem.eq(thisIndex).fadeIn();
+  };
+
+  var closePhase = function(){
+    $item.removeClass('active').css({'opacity':'1'});
+    $item.stop().animate({
+      'right':'0'
+    },500,'easeInOutCubic');
+    $cont.stop().animate({
+      'opacity':'0',
+      'width':'0'
+    },300,'easeInOutCubic');
+  }
+
+  $item.on('click',clickPhase);
+  $closeBtn.on('click',closePhase);
+
 }; // function have4Interation;
 
 
