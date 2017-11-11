@@ -19,10 +19,10 @@ var sliderSize = function(){
   // var ulW = itemW * ($item.length-1);
   $item.width(itemW).height(itemW);
   // $ul.width(ulW);
-};
+};// function sliderSize
 
 
-// what, what_bracket 등등
+// what, what_bracket  애니메이션
 var bracketAnimate = function(){
   var $box = $('.what_bracketbox'),
       $bracket = $('.what_bracket'),
@@ -59,22 +59,53 @@ var bracketAnimate = function(){
         if(_cuId >= $contItem.length){_cuId = 0;}
         whatAnimate();
       },3000);
-    }
+    };
     whatTimerset();
   };
 
   $cont.animate({
     'width':'600px'
   },1300,'easeOutBack',contentInterval);
-}
+};//function  bracketAnimate;
+
+// have4..
+
+var have4Interation = function(){
+  var $item = $('.have4_item'),
+      $conItem = $('.have4_content_item');
+      $conItemAct = $('.have4_content_item.active');
+  $item.on('click',function(){
+    // itemClickFunc();
+    var thisIndex = $(this).index(),
+        itemW = $item.outerWidth(true,true)+4;
+    $item.removeClass('active').css({'opacity':'0'});
+    $(this).addClass('active').css({'opacity':'1'});
+    $(this).stop().animate({
+       'right': thisIndex * itemW + 'px'
+    });
+  });
+  var itemClickFunc = function(){
+    var itemH = $conItemAct.height()/2;
+    $conItem.css({
+      'top':'50%',
+      'margin-top': '-'+ itemH + 'px'
+    });
+    console.log(itemH);
+  };
+}; // function have4Interation;
+
 
 
 
 // document
+var resizeFunc = function(){
+  sliderSize();
+};
 var docReady = function(){
-  $(window).resize(sliderSize);
+  $(window).resize(resizeFunc);
   sliderSize();
   bracketAnimate();
+  have4Interation();
 };
 docReady();
 });//ready
