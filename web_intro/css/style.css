@@ -416,14 +416,34 @@ section.section_video{
 }
 .video_btn_ul li:last-of-type{border: none;}
 .video_btn_ul li a{color: #fff; font-size: 40pt;}
-section .section_weare{
+section .section_footer{
 
 }
-.section_weare{
-
+.section_footer{
+  width: 100%;
+  margin-top: 0;
+  background-color: #000;
 }
-
-
+.section_footer_list{width: 80%; margin: 0 auto;}
+.footer_list_logo{float: left; margin-right: 66px;}
+.footer_list_logo li{color: #fff; font-size: 50pt;}
+.footer_list_text{float: left;}
+.footer_list_text li{
+  font-size: 25px; color: #676767;
+}
+.section_footer_list_img{
+  width: 800px; display: inline-block;
+}
+.section_footer_list_img li{float: right;}
+.section_footer_list_img li span{
+  width: 236px; height: 236px;
+  border: 1px solid #fff; display: inline-block;
+}
+.section_footer_list_img li span:first-of-type{
+  background: url(../img/)
+}
+.section_footer_list_img li dl{color: #fff; font-size: 15pt;}
+.section_footer_list_img li dt{font-size: 13pt; color: #676767;}
 footer{
 
 }
