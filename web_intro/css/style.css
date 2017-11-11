@@ -310,11 +310,17 @@ section.section_have4{
 
 }
 .section_have4{
+  padding-bottom: 240px;
   background-color: #1990ff; color: #fff;
   width: 100%; height: 100%;
 }
+.have4_ul{
+  width: 90%; margin: 0 auto;
+  margin-top: 142px;
+}
 .have4_item{
-  display: flex;justify-content: center;
+  position: relative;
+  display: flex; justify-content: center;
 }
 .have4_item p{
   margin-top: 120px; font-weight: bold;
@@ -322,11 +328,14 @@ section.section_have4{
 }
 .have4_ul .have4_item{
   /*position: relative;*/
-  margin: 0 76px;
+  margin-right: 76px;
   display: inline-block;
   width: 302px; height: 302px;
   background-color: #fff;
   border-radius: 2000px;
+}
+.have4_ul .have4_item:last-of-type{
+  margin-right: 0;
 }
 .have4_item .have4_item_icon{
   display: inline-block;
@@ -353,7 +362,6 @@ section.section_have4{
 }
 .have4_item:last-of-type .have4_item_icon{
   display: inline-block;
-  margin-right: 0;
   width: 186px; height: 186px;
   margin-top: 58px;
   background: url(../img/icons.png) no-repeat;
@@ -362,6 +370,8 @@ section.section_have4{
 }
 .have4_contents{}
 .have4_content_item{float: left;}
+.have4_content_item p{top: 0; right: 0;
+position: absolute;}
 section .section_howto{
 
 }
@@ -389,19 +399,28 @@ section .section_howto{
   background-color: #fff;
   border: 1px solid #fff; border-radius: 50px;
 }
-.howto_monitor_view_ul{height: 706px;}
-.howto_monitor_view_item{
-  float: left;
-}
 .howto_mpnitor_header_ul li:nth-of-type(2){margin: 0 12px;
 }
-.howto_monitor_view_item p {font-size: 34px;}
+.howto_monitor_view{overflow: hidden;}
+.howto_monitor_view_ul{
+  height: 706px; width: 70%;margin: 0 auto;
+}
+.howto_monitor_view_item{
+  margin: 0 auto; width: 100%;
+  margin-top: 248px;
+  float: left;
+}
+.howto_monitor_view_item p {
+  font-size: 32px;
+}
 section.section_video{
 
 }
 .section_video{
   position: relative;
   width: 100%; height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
   background: url(../img/videobackground.jpg) no-repeat;
   z-index: 1;
 }
@@ -416,18 +435,23 @@ section.section_video{
   -moz-filter: blur(12px);
   -o-filter: blur(12px);
 }
+.section_video video{display: block; margin: 0 auto;}
 .video_dark{
   position: absolute;
   z-index: -1  ;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.67);
+  right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.83);
   height: 100%; width: 100%;
 }
+.video_btn{display: inline-block;}
+.video_btn_ul{width: 100%; margin-top: 74px;}
 .video_btn_ul li{
-  border: 1px solid #fff;
-  display: inline-block;
+  border-right: 2px solid #fff;
+  float: left; padding: 0 218px;
+  margin-bottom: 92px;
 }
-.video_btn_ul li a{color: #fff;}
+.video_btn_ul li:last-of-type{border: none;}
+.video_btn_ul li a{color: #fff; font-size: 40pt;}
 section .section_weare{
 
 }
