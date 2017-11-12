@@ -1,7 +1,9 @@
+
 /*transition: all 0.3s ease-in-out;*/
 .what_dot_item,
 .what_p_item,
-.have4_content_close
+.have4_content_close,
+.nav_item_skew
 {transition: all 0.3s ease-in-out;}
 
 /*transition: all 0.2s ease;*/
@@ -10,7 +12,7 @@
 
 /*cursor: pointer;*/
 .nav_item_skew,
-.nav_item_tsext,
+.nav_item_text,
 .what_dot_item,
 .have4_item,
 .have4_content_close
@@ -73,9 +75,7 @@ nav{
   border-right: 2px solid #fff;
   border-left: 2px solid #fff;
 }
-.nav_item_skew.test{
-  /*background-color: #11f;*/
-}
+
 .nav_item_text{
   width: 100%; height: 100%; line-height: 60px;
   color: #2d2d2d;
@@ -118,20 +118,13 @@ header{
 }
 
 
-
 section.section_slider{
   color: #fff;
   padding-bottom: 0;
 }
-.section_slider h2{
-  color: #333;
-
-}
-.section_slider{
-}
-.slider_wrp{
-  position: relative;
-}
+.section_slider h2{color: #333;}
+.section_slider{}
+.slider_wrp{position: relative;}
 .slider_ul{
   display: -webkit-flex;
   display: -ms-flex;
@@ -155,9 +148,7 @@ section.section_slider{
   font-size: 34px; font-weight: bold;
   margin: 10px 0;
 }
-.slider_item_p{
-  font-size: 16px;
-}
+.slider_item_p{font-size: 16px;}
 .slider_item_img{
   position: absolute; bottom: 0; width: 100%;height: 65%;
   background: url(../img/sliderimg_1.png) no-repeat center;

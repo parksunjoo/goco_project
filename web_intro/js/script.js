@@ -53,7 +53,7 @@ var bracketAnimate = function(){
       clearTimeout(delayTimer);
       delayTimer = setTimeout(whatTimerset,4000);
     });
-    var whatTimerset =  function(){
+    var whatTimerset = function(){
       timer = setInterval(function(){
         ++_cuId;
         if(_cuId >= $contItem.length){_cuId = 0;}
@@ -66,6 +66,7 @@ var bracketAnimate = function(){
   $cont.animate({
     'width':'600px'
   },1300,'easeOutBack',contentInterval);
+
 };//function  bracketAnimate;
 
 // have4..
