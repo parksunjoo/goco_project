@@ -15,32 +15,38 @@
 
 <nav>
   <ul class="nav_ul">
-    <li class="nav_item active">
+    <li class="nav_item" data-target=".section_slider">
       <div class="nav_item_skew"></div>
       <div class="nav_item_textw">판판이 필요할때</div>
       <div class="nav_item_text">판판이 필요할때
       <div class="bar"></div></div>
     </li>
-    <li class="nav_item">
-      <div class="nav_item_skew test"></div>
+    <li class="nav_item" data-target=".section_what">
+      <div class="nav_item_skew"></div>
       <div class="nav_item_textw">판판이란</div>
       <div class="nav_item_text">판판이란
       <div class="bar"></div></div>
     </li>
-    <li class="nav_item">
+    <li class="nav_item" data-target=".section_have4">
       <div class="nav_item_skew"></div>
       <div class="nav_item_textw">우리만의 4가지</div>
       <div class="nav_item_text">우리만의 4가지
         <div class="bar"></div>
       </div>
     </li>
-    <li class="nav_item">
+    <li class="nav_item" data-target=".section_howto">
       <div class="nav_item_skew"></div>
       <div class="nav_item_textw">이용방법</div>
       <div class="nav_item_text">이용방법
       <div class="bar"></div></div>
     </li>
-    <li class="nav_item">
+    <li class="nav_item" data-target=".section_video">
+      <div class="nav_item_skew"></div>
+      <div class="nav_item_textw">영상</div>
+      <div class="nav_item_text">영상
+      <div class="bar"></div></div>
+    </li>
+    <li class="nav_item" data-target=".section_footer">
       <div class="nav_item_skew"></div>
       <div class="nav_item_textw">함께해요</div>
       <div class="nav_item_text">함께해요
@@ -58,16 +64,19 @@
 <section class="section_slider">
   <h2>판판, 이럴때 이용하세요.</h2>
   <div class="slider_wrp">
-    <div class="arrowbox">
-      <span class="arrow_prev">prev</span>
-      <span class="arrow_next">next</span>
-    </div>
     <ul class="slider_ul">
-      <li class="slider_item active">
+      <li class="slider_item">
         <div class="slider_item_num">01</div>
         <div class="slider_item_h">다른 타인의 의견이 궁금할때</div>
         <div class="slider_item_p">하고 싶은 말이 너무 많아서 주체할 수 없을때</div>
         <div class="slider_item_img"></div>
+      </li>
+      <li class="slider_item">
+        <div class="slider_item_num">02</div>
+        <div class="slider_item_h">다른 타인의 의견이 궁금할때</div>
+        <div class="slider_item_p">하고 싶은 말이 너무 많아서 주체할 수 없을때</div>
+        <div class="slider_item_img">
+        </div>
       </li>
       <li class="slider_item">
         <div class="slider_item_num">03</div>
@@ -76,13 +85,16 @@
         <div class="slider_item_img">
         </div>
       </li>
-      <li class="slider_item">
-        <div class="slider_item_num">04</div>
-        <div class="slider_item_h">다른 타인의 의견이 궁금할때</div>
-        <div class="slider_item_p">하고 싶은 말이 너무 많아서 주체할 수 없을때</div>
-        <div class="slider_item_img">
-        </div>
-      </li>
+    </ul>
+    <ul class="slider_dark_ul">
+      <li class="slider_dark_item hide"></li>
+      <li class="slider_dark_item view"></li>
+      <li class="slider_dark_item hide"></li>
+    </ul>
+    <ul class="slider_sensor_ul">
+      <li class="slider_sensor_item"></li>
+      <li class="slider_sensor_item"></li>
+      <li class="slider_sensor_item"></li>
     </ul>
   </div>
 </section>
@@ -100,8 +112,8 @@
         <div class="what_content">
           <ul class="what_content_ul">
             <li class="what_item">(재)판 넘어 (재)판</li>
-            <li class="what_item">우리정글뭐함</li>
-            <li class="what_item">나는 빡빡</li>
+            <li class="what_item">두번쨰 텍스트</li>
+            <li class="what_item">세번째 텍스트</li>
           </ul>
         </div>
         <span class="what_bracket b2">
@@ -109,11 +121,6 @@
         </span>
       </div>
       <span class="what_justtxt">입니다.</span>
-      <ul class="what_dot_ul">
-        <li class="what_dot_item active"></li>
-        <li class="what_dot_item"></li>
-        <li class="what_dot_item"></li>
-      </ul>
     </div>
     <div class="what_p">
       <ul class="what_p_ul">
@@ -128,6 +135,11 @@
         </li>
       </ul>
     </div>
+    <ul class="what_dot_ul">
+      <li class="what_dot_item active"></li>
+      <li class="what_dot_item"></li>
+      <li class="what_dot_item"></li>
+    </ul>
   </div>
 </section>
 
@@ -137,38 +149,43 @@
     판판이란 '(재)판 넘어 (재)판' 의 줄임말로 끊이지 않는 이슈와 논란들로 논쟁을 벌이고 있는 상황을 의미합니다. <br />그런 상황을 저희 판판은 모두의 의견을 모아 결론을 도출하는데에 의미를 둡니다.
   </div>
   <div class="have4_wrp">
-    <ul class="have4_ul">
-      <li class="have4_item">
-        <span class="have4_item_icon"></span>
-        <p>중립의견</p>
-      </li>
-      <li class="have4_item">
-        <span class="have4_item_icon"></span>
-        <p>재판유예</p>
-      </li>
-      <li class="have4_item">
-        <span class="have4_item_icon"></span>
-        <p>결론도출</p>
-      </li>
-      <li class="have4_item">
-        <span class="have4_item_icon"></span>
-        <p>대표의견</p>
-      </li>
-    </ul>
-    <ul class="have4_contents">
-      <li class="have4_content_item">
-        <p>내용들</p>
-      </li>
-      <li class="have4_content_item">
-        <p>내용들</p>
-      </li>
-      <li class="have4_content_item">
-        <p>내용들</p>
-      </li>
-      <li class="have4_content_item">
-        <p>내용들</p>
-      </li>
-    </ul>
+    <div class="have4_ul">
+      <ul>
+        <li class="have4_item">
+          <span class="have4_item_icon"></span>
+          <p>중립의견</p>
+        </li>
+        <li class="have4_item">
+          <span class="have4_item_icon"></span>
+          <p>재판유예</p>
+        </li>
+        <li class="have4_item">
+          <span class="have4_item_icon"></span>
+          <p>결론도출</p>
+        </li>
+        <li class="have4_item">
+          <span class="have4_item_icon"></span>
+          <p>대표의견</p>
+        </li>
+        <li class="have4_content">
+          <ul class="have4_content_ul">
+            <li class="have4_content_item">
+              판판이란 '(재)판 넘어 (재)판' 의 줄임말로 끊이지 않는 이슈와 논란들로 논쟁을 벌이고 있는 상황을 의미합니다. 그런 상황을 저희 판판은 모두의 의견을 모아 결론을 도출하는데에 의미를 둡니다.111
+            </li>
+            <li class="have4_content_item">
+              판판이란 '(재)판 넘어 (재)판' 의 줄임말로 끊이지 않는 이슈와 논란들로 논쟁
+            </li>
+            <li class="have4_content_item">
+              판판이란 '(재)판 넘어 (재)판' 의 줄임말로 끊이지 않는 이슈와 논란들로 논쟁을 벌이고 있는 상황을 의미합니다. 그런 상황을 저희 판판은 모두의 의견을 모아 결론을 도출하는데에 의미를 둡니다.333
+            </li>
+            <li class="have4_content_item">
+              판판이란 '(재)판 넘어 (재)판' 의 줄임말로 끊이지 않는 이슈와 논란들로 논쟁을 벌이고 있는 상황을 의미합니다. 그런 상황을 저희 판판은 모두의 의견을 모아 결론을 도출하는데에 의미를 둡니다.444
+            </li>
+          </ul>
+          <span class="have4_content_close"></span>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 
