@@ -175,7 +175,6 @@ section.section_slider{
   background-size: contain;
 }
 .slider_dark_ul{
-  height: 100%;
   position: absolute;  top: 0; right: 0;
   z-index: 3;
   display: -webkit-flex;
@@ -202,9 +201,6 @@ section.section_slider{
 .slider_sensor_item{
   width: 33.33%; height: 100%;
 }
-
-
-
 
 section.section_what{
   position: relative;
@@ -455,7 +451,8 @@ section.section_video{
 .section_video video{display: block; margin: 0 auto;}
 .video_dark{
   position: absolute;
-  z-index: -1  ;
+  padding-bottom: 0;
+  z-index: -1;
   right: 0; bottom: 0; top: 0; left: 0;
   background-color: rgba(0, 0, 0, 0.83);
   height: 100%; width: 100%;
@@ -478,25 +475,21 @@ section .section_footer{
   background-color: #000;
 }
 .section_footer_list{width: 80%; margin: 0 auto;}
-.footer_list_logo{float: left; margin-right: 66px;}
-.footer_list_logo li{color: #fff; font-size: 50pt;}
-.footer_list_text{float: left;}
-.footer_list_text li{
-  font-size: 25px; color: #676767;
-}
 .section_footer_list_img{
-  width: 800px; display: inline-block;
+  display: inline-block;
 }
-.section_footer_list_img li{float: right;}
+.section_footer_list_img li{float:left;}
 .section_footer_list_img li span{
   width: 236px; height: 236px;
+  margin: 0 10px 10px 0;
   border: 1px solid #fff; display: inline-block;
 }
 .section_footer_list_img li span:first-of-type{
   background: url(../img/)
 }
-.section_footer_list_img li dl{color: #fff; font-size: 15pt;}
+.section_footer_list_img li dl{color: #fff; font-size: 15pt;margin-bottom: 5px;}
 .section_footer_list_img li dt{font-size: 13pt; color: #676767;}
+
 footer{
 
 }
