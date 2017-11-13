@@ -365,14 +365,13 @@ section .section_howto{
 }
 .howto_mpnitor_header_ul li:nth-of-type(2){margin: 0 12px;
 }
-.howto_monitor_view{overflow: hidden;}
+/*.howto_monitor_view{overflow: hidden;}*/
 .howto_monitor_view_ul{
-  height: 706px; width: 70%;margin: 0 auto;
+  width: 1920px; margin: 0 auto;
+  overflow: hidden;
 }
 .howto_monitor_view_item{
-  margin: 0 auto; width: 100%;
-  margin-top: 248px;
-  float: left;
+  display: inline-block;
 }
 .howto_monitor_view_item p {
   font-size: 32px;
