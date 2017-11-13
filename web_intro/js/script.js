@@ -35,7 +35,7 @@ var naviScroll = function(){
       $item.removeClass('active');
       $item.eq(i).addClass('active');
       // if(sct >= sectionArr[0].offset().top){
-      //   bracketAnimate();
+      //   bracketInteraction();
       // }
     }
   }
@@ -77,7 +77,7 @@ var sliderInteraction = function(){
 
 
 // what, what_bracket
-var bracketAnimate = function(){
+var bracketInteraction = function(){
   var $box = $('.what_bracketbox'),
       $bracket = $('.what_bracket'),
       $cont = $('.what_content'),
@@ -123,18 +123,16 @@ var bracketAnimate = function(){
   $cont.animate({
     'width':'600px'
   },1300,'easeOutBack',contentInterval);
-};//function  bracketAnimate;
+};//function  bracketInteraction;
 
 // have4..
 
 var have4Interation = function(){
-
   var $have4ul = $('.have4_ul ul');
       $item = $('.have4_item'),
       $cont =  $('.have4_content');
       $conItem = $('.have4_content_item'),
       $closeBtn = $('.have4_content_close');
-
   var itemClickFunc = function(thisindex){
     $conItem.removeClass('active');
     $conItem.eq(thisindex).addClass('active');
@@ -145,7 +143,6 @@ var have4Interation = function(){
       'margin-top': '-'+ itemH + 'px'
     });
   };
-
   var clickPhase = function(){
     var thisIndex = $(this).index(),
         itemW = $item.outerWidth(true,true)+4,
@@ -163,7 +160,6 @@ var have4Interation = function(){
     $conItem.fadeOut();
     $conItem.eq(thisIndex).fadeIn();
   };
-
   var closePhase = function(){
     $item.removeClass('active').css({'opacity':'1'});
     $item.stop().animate({
@@ -174,14 +170,12 @@ var have4Interation = function(){
       'width':'0'
     },300,'easeInOutCubic');
   }
-
   $item.on('click',clickPhase);
   $closeBtn.on('click',closePhase);
-
 }; // function have4Interation;
 
 
-console.log()
+// console.log()
 
 // document
 var scrollFunc = function(){
@@ -189,13 +183,14 @@ var scrollFunc = function(){
 }
 var resizeFunc = function(){
   sliderInteraction();
+  howtoInteraction();
 };
 var docReady = function(){
   $(window).resize(resizeFunc);
   $(window).scroll(scrollFunc)
   naviInteraction();
   sliderInteraction();
-  bracketAnimate();
+  bracketInteraction();
   have4Interation();
 };
 docReady();
