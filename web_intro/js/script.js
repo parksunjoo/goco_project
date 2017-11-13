@@ -7,7 +7,7 @@ var naviInteraction = function(){
   var $item = $('.nav_item');
 
   $item.on('click',function(){
-    var thisindex = $(this).index();
+    // var thisindex = $(this).index();
     var scrollPosition = $($(this).attr("data-target")).offset().top-20;
     $('html, body').stop().animate({
       'scrollTop': scrollPosition
@@ -34,9 +34,9 @@ var naviScroll = function(){
     if(sct >= offTop){
       $item.removeClass('active');
       $item.eq(i).addClass('active');
-      if(sct >= sectionArr[0].offset().top){
-        bracketAnimate();
-      }
+      // if(sct >= sectionArr[0].offset().top){
+      //   bracketAnimate();
+      // }
     }
   }
 };
@@ -61,10 +61,10 @@ var sliderInteraction = function(){
   };
   sliderSize();
 
-  var sliderMouseEnter = function(thisindex){
-    console.log(thisindex);
+  var sliderMouseEnter = function(sliderthisindex){
+    console.log(sliderthisindex);
     $darkUl.stop().animate({
-      'right': '-' + itemW * thisindex
+      'right': '-' + itemW * sliderthisindex
     },500,'easeOutCubic')
   };
 
@@ -110,8 +110,11 @@ var bracketAnimate = function(){
     var whatTimerset = function(){
       timer = setInterval(function(){
         ++_cuId;
-        if(_cuId >= $contItem.length){_cuId = 0;}
+        if(_cuId >= $contItem.length){
+          _cuId = 0;
+        }
         whatAnimate();
+        console.log(_cuId);
       },3000);
     };
     whatTimerset();
@@ -192,7 +195,7 @@ var docReady = function(){
   $(window).scroll(scrollFunc)
   naviInteraction();
   sliderInteraction();
-  // bracketAnimate();
+  bracketAnimate();
   have4Interation();
 };
 docReady();
