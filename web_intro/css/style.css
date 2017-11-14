@@ -428,13 +428,17 @@ section.section_howto{
   background-color: #444242;
   color: #fff;
 }
+.howto_monitor{position: relative;}
+.howto_arrowbox{}
+.arrow_prev{position: absolute; color: #fff; left: 200px;top: 400px;}
+.arrow_next{position: absolute; color: #fff; right: 200px;top: 400px;}
 .howto_monitor_box{
   border: 8px solid #fff;
   width: 60%; margin: 0 auto;
   border-radius: 10px;
 }
 .howto_monitor_view{
-  border: 1px solid #ff0000;width: 100%;
+  width: 100%;
 }
 .howto_mpnitor_header{
   height: 72px;
