@@ -428,8 +428,10 @@ section.section_howto{
   background-color: #444242;
   color: #fff;
 }
+.howto_monitor_view{border: 1px solid #fff;}
+.howto_mpnitor_header{border: 1px solid #dd2727;}
 section.section_video{
-  position: relative;
+  position: relative; color: #fff;
   width: 100%; height: 100%;
   -webkit-background-size: cover;
   background-size: cover;
@@ -456,18 +458,22 @@ section.section_video{
   background-color: rgba(0, 0, 0, 0.83);
   height: 100%; width: 100%;
 }
-.video_btn{display: inline-block;}
-.video_btn_ul{width: 100%; margin-top: 74px;}
+.video_btn{
+  width: 100%;display: inline-block;
+}
+.video_btn_ul{
+  width: 90%; margin: 0 auto;display: inline-block;
+  padding-top: 74px;
+}
 .video_btn_ul li{
   border-right: 2px solid #fff;
-  float: left; padding: 0 218px;
+  width: 49%;
+  float: left; margin: 0 auto;
   margin-bottom: 92px;
 }
 .video_btn_ul li:last-of-type{border: none;}
-.video_btn_ul li a{color: #fff; font-size: 40pt;}
-section .section_footer{
-
-}
+.video_btn_ul li a{color: #fff; font-size: 40pt; font-weight: bold;}
+section .section_footer{}
 .section_footer{
   width: 100%;
   margin-top: 0;
@@ -475,17 +481,42 @@ section .section_footer{
 }
 .section_footer_list{width: 80%; margin: 0 auto;}
 .section_footer_list_img{
-  display: inline-block;
+  display: flex; width: 100%;
 }
-.section_footer_list_img li{float:left;}
+.section_footer_list_img li{
+  justify-content:space-between; width: 90%;
+}
 .section_footer_list_img li span{
   width: 236px; height: 236px;
   margin: 0 10px 10px 0;
-  border: 1px solid #fff; display: inline-block;
+  display: inline-block;
 }
-.section_footer_list_img li span:first-of-type{
-  background: url(../img/)
+.section_footer_list_img li:first-of-type span{
+  background: url(../img/han.jpg) no-repeat;
+  background-size: 550px;
+  background-position: -158px -46px;
 }
+.section_footer_list_img li:nth-of-type(2) span{
+  background: url(../img/so.jpg) no-repeat;
+  background-size: 550px;
+  background-position: -178px -46px;
+}
+.section_footer_list_img li:nth-of-type(3) span{
+  background: url(../img/so.jpg) no-repeat;
+  background-size: 550px;
+  background-position: -158px -46px;
+}
+.section_footer_list_img li:nth-of-type(4) span{
+  background: url(../img/ma.jpg) no-repeat;
+  background-size: 550px;
+  background-position: -172px -46px;
+}
+.section_footer_list_img li:last-of-type span{
+  background: url(../img/sun.jpg) no-repeat;
+  background-size: 550px;
+  background-position: -190px -46px;
+}
+
 .section_footer_list_img li dl{color: #fff; font-size: 15pt;margin-bottom: 5px;}
 .section_footer_list_img li dt{font-size: 13pt; color: #676767;}
 
