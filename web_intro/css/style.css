@@ -176,7 +176,8 @@ section.section_slider{
 }
 .slider_dark_ul{
   position: absolute;  top: 0; right: 0;
-  z-index: 3;
+  z-index: 4;
+  height: 100%;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -188,6 +189,7 @@ section.section_slider{
   background-color: #000;
 }
 .slider_dark_item:nth-child(2){
+  border: 15px solid #fff;
 }
 
 .slider_sensor_ul{

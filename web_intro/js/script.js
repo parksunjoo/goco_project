@@ -183,7 +183,7 @@ var scrollFunc = function(){
 }
 var resizeFunc = function(){
   sliderInteraction();
-  howtoInteraction();
+  // howtoInteraction();
 };
 var docReady = function(){
   $(window).resize(resizeFunc);
