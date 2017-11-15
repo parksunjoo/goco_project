@@ -480,7 +480,7 @@ section.section_howto{
 }
 .howto_arrowbox a{
   display: inline-block;
-  width: 60px; height: 60px;
+  height: 60px;
   z-index: 5;
   background: url(../img/double_arrow.png) no-repeat;
   background-color: #fff;
