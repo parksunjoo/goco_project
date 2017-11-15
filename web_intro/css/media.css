@@ -1,0 +1,27 @@
+@media screen and (max-width:1240px){
+/*start*/
+
+/*section slider*/
+.slider_item_h{
+  /*34 -> 24*/
+  font-size: 24px;
+}
+.slider_item_p{
+  /*16 -> 12*/
+  font-size: 12px;
+}
+.slider_item_num{
+  /*16 -> 12*/
+  font-size: 30px;
+}
+
+
+
+/*end*/
+}
+
+@media screen and (max-width:939px){
+/*start*/
+
+/*end*/
+}

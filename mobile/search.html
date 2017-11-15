@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>search</title>
+  <link rel="stylesheet" href="font/font.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/search.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/easetype.js"></script>
+</head>
+  <body>
+    <div class="fixwrp">
+      <div id="logo">
+        <h1 alt="로고" class="txt_dl">판판</h1>
+      </div>
+      <div class="main_nav">
+        <ul class="main_nav_ul">
+          <li class="main_nav_item select"><a href="#">종합</a></li>
+          <li class="main_nav_item"><a href="#">정치</a></li>
+          <li class="main_nav_item"><a href="#">경제</a></li>
+          <li class="main_nav_item"><a href="#">사회</a></li>
+          <li class="main_nav_item"><a href="#">문화</a></li>
+          <li class="main_nav_item"><a href="#">세계</a></li>
+          <li class="main_nav_item"><a href="#">it&#47;과학</a></li>
+          <li class="main_nav_item"><a href="#">철학</a></li>
+          <!-- <li class="main_nav_item"><a href="#">생활</a></li> -->
+        </ul>
+        <span class="fixnav_bar">
+        </span>
+      </div>
+    </div>
+
+    <div class="ctn">
+      <form action="get">
+        <span class="get-box">
+          <div class="search">
+            <input type="text" placeholder="노키즈존" value class="search_text">
+            <a href="#" class="search_btn"></a>
+          </div>
+        </span>
+      </form>
+      <div class="search_ctn">
+        <ul class="search_ctn_ul">
+          <li>
+            <a href="opinion.html">
+              <span class="list_img"></span>
+              <dl>
+                <dt>여러분에게도 어릴적 시적이 있듯.</dt>
+                <dd><p>피고</p>노세이프존 구시대적 발상이다.</dd>
+                <dd><p>원고</p>아이라고 그른 것을 용서해야 하는가.</dd>
+                <dd>34일 남음</dd>
+              </dl>
+              <div class="gauge_bar">
+                <span class="list_gauge">
+                  <span class="list_gauge_b"></span>
+                  <span class="list_gauge_g"></span>
+                  <span class="list_gauge_y"></span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="opinion.html">
+              <span class="list_img"></span>
+              <dl>
+                <dt>여러분에게도 어릴적 시적이 있듯.</dt>
+                <dd><p>피고</p>노세이프존 구시대적 발상이다.</dd>
+                <dd><p>원고</p>아이라고 그른 것을 용서해야 하는가.</dd>
+                <dd>34일 남음</dd>
+              </dl>
+              <div class="gauge_bar">
+                <span class="list_gauge">
+                  <span class="list_gauge_b"></span>
+                  <span class="list_gauge_g"></span>
+                  <span class="list_gauge_y"></span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="opinion.html">
+              <span class="list_img"></span>
+              <dl>
+                <dt>여러분에게도 어릴적 시적이 있듯.</dt>
+                <dd><p>피고</p>노세이프존 구시대적 발상이다.</dd>
+                <dd><p>원고</p>아이라고 그른 것을 용서해야 하는가.</dd>
+                <dd>34일 남음</dd>
+              </dl>
+              <div class="gauge_bar">
+                <span class="list_gauge">
+                  <span class="list_gauge_b"></span>
+                  <span class="list_gauge_g"></span>
+                  <span class="list_gauge_y"></span>
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="underbox">
+      <div class="underbar">
+        <ul class="underbar_list">
+          <li class="flex_left">
+            <div class="under_item"><a href="index.html"><span class="undericon"></span>홈</a></div>
+            <div class="under_item select"><a href="#"><span class="undericon"></span>재판찾기</a></div>
+          </li>
+          <li class="under_item middle">
+            <span class="icons demoSpan1"></span>
+          </li>
+          <li class="flex_right">
+            <div class="under_item"><a href="#"><span class="undericon"></span>마이페이지</a></div>
+            <div class="under_item"><a href="opinion.html"><span class="undericon"></span>판판광장</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script>
+      $('.search_btn').on('click', function(){
+        $('.search_ctn_ul').css('opacity','1');
+      });
+    </script>
+  </body>
+</html>
