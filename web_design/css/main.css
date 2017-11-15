@@ -9,6 +9,21 @@ header{
   min-height: 480px;
   height: 45.4%;
 }
+.intro{
+  color: #fff; font-weight: bold;
+  text-align: center; line-height: 40px;
+  z-index: 999;
+  top: 10px; right: 30px;
+  position: fixed;
+  display: inline-block;
+  width: 40px; height: 40px;
+  border-radius: 5px;
+  background-color: #1990ff;
+  overflow: hidden;
+  transition: all 0.1s ease-in-out;
+}
+.intro:hover{border-radius: 50px;  transition: all 0.1s ease-in-out;
+}
 header nav{}
 header nav ul{
   display: flex;
